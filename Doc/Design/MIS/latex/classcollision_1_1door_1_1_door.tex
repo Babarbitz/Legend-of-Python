@@ -1,0 +1,100 @@
+\hypertarget{classcollision_1_1door_1_1_door}{}\section{collision.\+door.\+Door Class Reference}
+\label{classcollision_1_1door_1_1_door}\index{collision.\+door.\+Door@{collision.\+door.\+Door}}
+
+
+Dungeon \hyperlink{classcollision_1_1door_1_1_door}{Door} Class  This class is used to place a door on one of four places of a dungeon room, to allow the player to walk through and traverse to other rooms within the dungeon.  
+
+
+Inheritance diagram for collision.\+door.\+Door\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcollision_1_1door_1_1_door}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcollision_1_1door_1_1_door_ab2b3e5e79d444388807a18f0c2022795}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, direction, \hyperlink{classcollision_1_1door_1_1_door_a22802ca389469576ecc1418e8c3e20b8}{state})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcollision_1_1door_1_1_door}{Door} constructor, making a door on the specified side of the dungeon. \end{DoxyCompactList}\item 
+def \hyperlink{classcollision_1_1door_1_1_door_a905d11890b7fa2fa789d67538136e685}{collision} (self, i)
+\begin{DoxyCompactList}\small\item\em This method checks for collision with the \hyperlink{classcollision_1_1door_1_1_door}{Door} object and other sprite object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a9ae0128993d925a4c6bcdb79936dbc4a}\label{classcollision_1_1door_1_1_door_a9ae0128993d925a4c6bcdb79936dbc4a}} 
+def \hyperlink{classcollision_1_1door_1_1_door_a9ae0128993d925a4c6bcdb79936dbc4a}{open\+Door} (self)
+\begin{DoxyCompactList}\small\item\em Function to set a door state and sprite to open  Changes a blocked door (state 1/2) to an open door (state 0), changing collision attributes and sprites respectively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a97c823f719c04f5bf8e5428e7b39b8b5}\label{classcollision_1_1door_1_1_door_a97c823f719c04f5bf8e5428e7b39b8b5}} 
+{\bfseries dungeon\+\_\+sheet}
+\item 
+\hyperlink{classcollision_1_1door_1_1_door_a22802ca389469576ecc1418e8c3e20b8}{state}
+\begin{DoxyCompactList}\small\item\em D\+O\+OR S\+T\+A\+TE 0 = open 1 = blocked (objective door) 2 = locked (key door) State of the door, integer value on whether the door is open(0), blocked by an objective(1), or locked(2) (blocked = eg. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a0ff4b9ac39898923fae449e1ed392b8a}\label{classcollision_1_1door_1_1_door_a0ff4b9ac39898923fae449e1ed392b8a}} 
+{\bfseries dir}
+\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a4d8b68c958e4ec059f2e99e53e76abf1}\label{classcollision_1_1door_1_1_door_a4d8b68c958e4ec059f2e99e53e76abf1}} 
+\hyperlink{classcollision_1_1door_1_1_door_a4d8b68c958e4ec059f2e99e53e76abf1}{image}
+\begin{DoxyCompactList}\small\item\em Sprite image of the door. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a162269007487f8282278565e2f531a0c}\label{classcollision_1_1door_1_1_door_a162269007487f8282278565e2f531a0c}} 
+\hyperlink{classcollision_1_1door_1_1_door_a162269007487f8282278565e2f531a0c}{rect}
+\begin{DoxyCompactList}\small\item\em X and y coordinates of the image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a101da4a463e317b8919c0bd1ad73b8df}\label{classcollision_1_1door_1_1_door_a101da4a463e317b8919c0bd1ad73b8df}} 
+\hyperlink{classcollision_1_1door_1_1_door_a101da4a463e317b8919c0bd1ad73b8df}{id}
+\begin{DoxyCompactList}\small\item\em Collision ID (to help other objects identify what they are colliding with and how to react) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dungeon \hyperlink{classcollision_1_1door_1_1_door}{Door} Class  This class is used to place a door on one of four places of a dungeon room, to allow the player to walk through and traverse to other rooms within the dungeon. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_ab2b3e5e79d444388807a18f0c2022795}\label{classcollision_1_1door_1_1_door_ab2b3e5e79d444388807a18f0c2022795}} 
+\index{collision\+::door\+::\+Door@{collision\+::door\+::\+Door}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!collision\+::door\+::\+Door@{collision\+::door\+::\+Door}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def collision.\+door.\+Door.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{direction,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classcollision_1_1door_1_1_door}{Door} constructor, making a door on the specified side of the dungeon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & Integer value of the wall the door will be on (direction from centre of room) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a905d11890b7fa2fa789d67538136e685}\label{classcollision_1_1door_1_1_door_a905d11890b7fa2fa789d67538136e685}} 
+\index{collision\+::door\+::\+Door@{collision\+::door\+::\+Door}!collision@{collision}}
+\index{collision@{collision}!collision\+::door\+::\+Door@{collision\+::door\+::\+Door}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily def collision.\+door.\+Door.\+collision (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i }\end{DoxyParamCaption})}
+
+
+
+This method checks for collision with the \hyperlink{classcollision_1_1door_1_1_door}{Door} object and other sprite object. 
+
+The collision will be checked with the \hyperlink{classcollision_1_1door_1_1_door}{Door} and other sprite object as the object collides with the wall. 
+\begin{DoxyParams}{Parameters}
+{\em i} & This is the sprite object that is passed into the method, and checks if the object is colliding with the \hyperlink{classcollision_1_1door_1_1_door}{Door} object, reseting the sprite objects location accordingly. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcollision_1_1door_1_1_door_a22802ca389469576ecc1418e8c3e20b8}\label{classcollision_1_1door_1_1_door_a22802ca389469576ecc1418e8c3e20b8}} 
+\index{collision\+::door\+::\+Door@{collision\+::door\+::\+Door}!state@{state}}
+\index{state@{state}!collision\+::door\+::\+Door@{collision\+::door\+::\+Door}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily collision.\+door.\+Door.\+state}
+
+
+
+D\+O\+OR S\+T\+A\+TE 0 = open 1 = blocked (objective door) 2 = locked (key door) State of the door, integer value on whether the door is open(0), blocked by an objective(1), or locked(2) (blocked = eg. 
+
+kill all enemies in room to open) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/collision/\hyperlink{door_8py}{door.\+py}\end{DoxyCompactItemize}

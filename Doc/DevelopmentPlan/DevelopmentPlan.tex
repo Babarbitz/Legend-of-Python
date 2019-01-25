@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+
+\title{SE 3XA3: Development Plan\\Legend of Python}
+
+\author{Team \#1, Lava Boys Inc
+		\\ Bilal Jaffry, jaffryb
+		\\ Giacomo Loparco, loparcog
+		\\ Lucas Zacharewicz, zacharel
+}
+
+\date{}
+
+\begin{comment}
+\input{../Comments}
+\end{comment}
+
+\begin{document}
+
+\begin{table}[hp]
+\caption{Revision History} \label{TblRevisionHistory}
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+\textbf{Date} & \textbf{Developer(s)} & \textbf{Change}\\
+\midrule
+September 27 & Lucas & Added basic text for each category\\
+September 28 & Lucas & Made the language and word use more professional\\
+November 30 & Lucas & Revision 1\\ 
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\maketitle
+
+\section{Team Meeting Plan}
+
+	We will be meeting weekly every tuesday from 16:30 to 19:00 on campus \textcolor{blue}{on the second floor of Thode Library.} In addition we will consistently updating one another on progress of the project via online communications. The meetings will mainly be to recap on the progress of the work done in the last week, and to distribute the work for the coming week. Any group members not able to make it to the weekly meeting need to inform the group at least 1 hour before meeting.
+
+\section{Team Communication Plan}
+
+We will write plain text notes during in-person meetings to keep track of ideas that we have and what we accomplish during the meetings. In addition we will use the group online messaging platform (Discord) to facilitate project discussion outside of the meetings.
+
+\section{Team Member Roles}
+
+We are mutual team leaders.\\ \\
+Bilal Jaffry: Scribe, developer, designer\\
+Giacomo Loparco: Developer, tester\\
+Lucas Zacharewicz: Developer, tester\\
+
+\section{Git Workflow Plan}
+
+We plan on using a feature branch workflow which is an extension of the regular centralized workflow that is the basis of git. Features that are being developed are done on separate branches and then those branches are merged into master as they become complete. This allows us to work on features seperatly and add them in without breaking what is already working. \textcolor{blue}{Lucas has been assigned to resolve merge conflicts and Bilal and Jack have been assigned to handle issues.}
+
+\section{Proof of Concept Demonstration Plan}
+
+\textcolor{blue}{The most difficult part of the coding will be implementing backend functionality such as sprite rendering / loading, enemy ai, and other base gameplay mechanics. Testing of such mechanics will be done rather easily with automated unit testing. The required Pygame library is relatively easy to obtain and install. As we are using python portability is not an concern.} We will aim to display a working test area that encaspulates the player with basic enemies and allow for the basic mechanics of the game to be tested. This will include rendering the game scenes, interacting with enemies, walking through multiroom areas, item interaction, and perhaps other features time permitted. 
+
+\section{Technology}
+
+Python 3 will be the base language for the project as it is high level and will allow for more simplistic implementation with the use of the pygame library. Formal testing will be handled by the pytest library and we will use doxygen to handle documentation generation. We will facilitate our unit testing, build testing, and documentation generation through make for these actions to be effortless in our development cycle. There will be no chosen text editor for this project as different developers prefer different text editors and it has no particular ill effect to allow them to use what they are comfortable with.
+
+\section{Coding Style}
+
+\href{https://github.com/google/styleguide}{Google Python Style Guide}
+
+\section{Project Schedule}
+
+\href{https://gitlab.cas.mcmaster.ca/zacharel/pyDroid/tree/master/ProjectSchedule/Group1_Gantt_Rev0.pdf}{Gnatt Chart}
+
+\section{Project Review}
+
+\end{document}

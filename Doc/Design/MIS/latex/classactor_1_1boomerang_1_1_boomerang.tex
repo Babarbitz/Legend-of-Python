@@ -1,0 +1,97 @@
+\hypertarget{classactor_1_1boomerang_1_1_boomerang}{}\section{actor.\+boomerang.\+Boomerang Class Reference}
+\label{classactor_1_1boomerang_1_1_boomerang}\index{actor.\+boomerang.\+Boomerang@{actor.\+boomerang.\+Boomerang}}
+
+
+\hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} Weapon Class  The class holding the creation, behaviour, and collision effects of the player\textquotesingle{}s boomerang weapon.  
+
+
+Inheritance diagram for actor.\+boomerang.\+Boomerang\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classactor_1_1boomerang_1_1_boomerang}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_a7b20570fa9c54aaba3623075f99770f1}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y, direction, \hyperlink{classactor_1_1boomerang_1_1_boomerang_a3f28b182298ed6f753bbaa2bacc50287}{obj}, player)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} constructor  A sprite subclass constructor that takes an x and y position (the players), a direction for the boomerang\textquotesingle{}s trajectory, a list of collidable objects, as well as the player object (to add to the collision list) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a5a0f0c1b4d25b5fa10ecb7b02a4f6b5e}\label{classactor_1_1boomerang_1_1_boomerang_a5a0f0c1b4d25b5fa10ecb7b02a4f6b5e}} 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_a5a0f0c1b4d25b5fa10ecb7b02a4f6b5e}{moveupdate} (self)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} position updating function, updating position based on changing trajectory speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_abbfebdf98803c7e4ac69a1a6e251d781}\label{classactor_1_1boomerang_1_1_boomerang_abbfebdf98803c7e4ac69a1a6e251d781}} 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_abbfebdf98803c7e4ac69a1a6e251d781}{collisionupdate} (self)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} collision updating function, constantly checking for collisions and acting accordingly. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a8ed616f57acf720fdd4d7bd5702e1684}\label{classactor_1_1boomerang_1_1_boomerang_a8ed616f57acf720fdd4d7bd5702e1684}} 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_a8ed616f57acf720fdd4d7bd5702e1684}{spriteupdate} (self)
+\begin{DoxyCompactList}\small\item\em Updates the boomerang sprite every 10 frames. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a5e84fc23d586483105c71cc4c607264c}\label{classactor_1_1boomerang_1_1_boomerang_a5e84fc23d586483105c71cc4c607264c}} 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_a5e84fc23d586483105c71cc4c607264c}{update} (self)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} updating function, repeatedly running moveupdate and collisionupdate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_ad32ffa27cd6221ed74d144f8874eae5f}\label{classactor_1_1boomerang_1_1_boomerang_ad32ffa27cd6221ed74d144f8874eae5f}} 
+def \hyperlink{classactor_1_1boomerang_1_1_boomerang_ad32ffa27cd6221ed74d144f8874eae5f}{collision} (self)
+\begin{DoxyCompactList}\small\item\em Default collision function to satisfy other class collision calls to this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_afff9077b183225033461cc14dede928b}\label{classactor_1_1boomerang_1_1_boomerang_afff9077b183225033461cc14dede928b}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_afff9077b183225033461cc14dede928b}{image}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} sprite image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a46ad11df1efc1a8395a6bff47b34308f}\label{classactor_1_1boomerang_1_1_boomerang_a46ad11df1efc1a8395a6bff47b34308f}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_a46ad11df1efc1a8395a6bff47b34308f}{rect}
+\begin{DoxyCompactList}\small\item\em Position of boomerang. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_abd6b4b22c63a81db76e468ec0da228b3}\label{classactor_1_1boomerang_1_1_boomerang_abd6b4b22c63a81db76e468ec0da228b3}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_abd6b4b22c63a81db76e468ec0da228b3}{dir}
+\begin{DoxyCompactList}\small\item\em Initial travel direction of boomerang. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a67772200ff4603844c7941f8be87947f}\label{classactor_1_1boomerang_1_1_boomerang_a67772200ff4603844c7941f8be87947f}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_a67772200ff4603844c7941f8be87947f}{speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} initial update speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a3f28b182298ed6f753bbaa2bacc50287}\label{classactor_1_1boomerang_1_1_boomerang_a3f28b182298ed6f753bbaa2bacc50287}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_a3f28b182298ed6f753bbaa2bacc50287}{obj}
+\begin{DoxyCompactList}\small\item\em List of objects the boomerang could collide with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_abfb405ccedae18b49b36d5504a548aed}\label{classactor_1_1boomerang_1_1_boomerang_abfb405ccedae18b49b36d5504a548aed}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_abfb405ccedae18b49b36d5504a548aed}{killable}
+\begin{DoxyCompactList}\small\item\em Boolean to tell when the boomerang should be deleted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a54e828173053f349639a8e75b56281c6}\label{classactor_1_1boomerang_1_1_boomerang_a54e828173053f349639a8e75b56281c6}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_a54e828173053f349639a8e75b56281c6}{sprites}
+\begin{DoxyCompactList}\small\item\em List of sprites for boomerang. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_affb047b1f34deb8f68d0d6d5ee499429}\label{classactor_1_1boomerang_1_1_boomerang_affb047b1f34deb8f68d0d6d5ee499429}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_affb047b1f34deb8f68d0d6d5ee499429}{sprite\+Index}
+\begin{DoxyCompactList}\small\item\em Index of the current sprite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_ae815f4dbc9a5e7c3d8e4596c41001c70}\label{classactor_1_1boomerang_1_1_boomerang_ae815f4dbc9a5e7c3d8e4596c41001c70}} 
+\hyperlink{classactor_1_1boomerang_1_1_boomerang_ae815f4dbc9a5e7c3d8e4596c41001c70}{frame\+Counter}
+\begin{DoxyCompactList}\small\item\em Total number of frames boomerang is onscreen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} Weapon Class  The class holding the creation, behaviour, and collision effects of the player\textquotesingle{}s boomerang weapon. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1boomerang_1_1_boomerang_a7b20570fa9c54aaba3623075f99770f1}\label{classactor_1_1boomerang_1_1_boomerang_a7b20570fa9c54aaba3623075f99770f1}} 
+\index{actor\+::boomerang\+::\+Boomerang@{actor\+::boomerang\+::\+Boomerang}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::boomerang\+::\+Boomerang@{actor\+::boomerang\+::\+Boomerang}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+boomerang.\+Boomerang.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{direction,  }\item[{}]{obj,  }\item[{}]{player }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} constructor  A sprite subclass constructor that takes an x and y position (the players), a direction for the boomerang\textquotesingle{}s trajectory, a list of collidable objects, as well as the player object (to add to the collision list) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of boomerang spawn \\
+\hline
+{\em y} & Y coordinate of boomerang spawn \\
+\hline
+{\em direction} & Direction of boomerang path \\
+\hline
+{\em obj} & List of objects to check for collision with the boomerang \\
+\hline
+{\em player} & Player object to also check collision for \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{boomerang_8py}{boomerang.\+py}\end{DoxyCompactItemize}

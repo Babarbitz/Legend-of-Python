@@ -1,0 +1,136 @@
+\hypertarget{classcollision_1_1levelmanager_1_1_level_manager}{}\section{collision.\+levelmanager.\+Level\+Manager Class Reference}
+\label{classcollision_1_1levelmanager_1_1_level_manager}\index{collision.\+levelmanager.\+Level\+Manager@{collision.\+levelmanager.\+Level\+Manager}}
+
+
+Dungeon Level Creation Class  Class used as a master constructor for every dungeon levels, getting pre-\/written data and loading it when the game starts and when a transition occurs.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_ac15451905c2523ed3929d877762bb290}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, spritelist, collidlist, updatelist)
+\begin{DoxyCompactList}\small\item\em Dungeon Level Master Initializer  The class initializer, taking empty lists, each for letting the \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a02aa3ee9b35d68c9386517c518c101f4}{make()} function define what objects need to be drawn/collidable/updatable. \end{DoxyCompactList}\item 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a02aa3ee9b35d68c9386517c518c101f4}{make} (self, \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a5d1c987dbd37f1da1496915d4a754d70}{x}, \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a5b6011487a9ea527e43194554dbf1326}{y})
+\begin{DoxyCompactList}\small\item\em Dungeon Level Constructor  The main function to load a given index of data from leveldata.\+py, and load it into the game environment. \end{DoxyCompactList}\item 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_ac73f0ef69a1d1ff85a906a68cb1e2c86}{transition} (self, xchange, ychange)
+\begin{DoxyCompactList}\small\item\em Dungeon level transition function, used to go to an adjacent level, clear all current data, and load new room data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a5eb6314d72a5b6a438eb85ef1a926ce0}\label{classcollision_1_1levelmanager_1_1_level_manager_a5eb6314d72a5b6a438eb85ef1a926ce0}} 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a5eb6314d72a5b6a438eb85ef1a926ce0}{open} (self)
+\begin{DoxyCompactList}\small\item\em Function to open all blocked doors in the current dungeon room (usually used when all enemies defeated, locked doors stay locked) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_ab31d4ea306a0ef50bf25a4a4dd3b9aaf}\label{classcollision_1_1levelmanager_1_1_level_manager_ab31d4ea306a0ef50bf25a4a4dd3b9aaf}} 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_ab31d4ea306a0ef50bf25a4a4dd3b9aaf}{endroom} (self)
+\begin{DoxyCompactList}\small\item\em Function to store current data, open all blocked doors, and possibly spawn a key/prize when all enemies defeated  When all enemies in a room are killed, this function is called, changing the enemy array in leveldata.\+py for the current level to an empty array (so enemies don\textquotesingle{}t reload once you enter again), running the self.\+open() function to open all blocked doors, and if the room\+ID is a predetermined key/rupy room, spawn a key/rupy in the middle of the room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a11bb309e2c9c137a0000f1d94b3788f6}\label{classcollision_1_1levelmanager_1_1_level_manager_a11bb309e2c9c137a0000f1d94b3788f6}} 
+def \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a11bb309e2c9c137a0000f1d94b3788f6}{clear} (self)
+\begin{DoxyCompactList}\small\item\em Clears the levelmanager\textquotesingle{}s update lists  Empty all sprite lists for the game (spritelist, collisionlist, and updatelist), usually used in transition from one room to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a05b0081f0ceb5ff238e29476d26f5bc5}\label{classcollision_1_1levelmanager_1_1_level_manager_a05b0081f0ceb5ff238e29476d26f5bc5}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a05b0081f0ceb5ff238e29476d26f5bc5}{sl}
+\begin{DoxyCompactList}\small\item\em List of objects to be printed (ie player, not invisible walls) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_af2f247df791be0e0a8d1adc357e679b4}\label{classcollision_1_1levelmanager_1_1_level_manager_af2f247df791be0e0a8d1adc357e679b4}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_af2f247df791be0e0a8d1adc357e679b4}{cl}
+\begin{DoxyCompactList}\small\item\em List of objects that can be collided with (ie keese, not level background) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a612895753b85eced72f425f4f23885fd}\label{classcollision_1_1levelmanager_1_1_level_manager_a612895753b85eced72f425f4f23885fd}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a612895753b85eced72f425f4f23885fd}{ul}
+\begin{DoxyCompactList}\small\item\em List of objects that need to be constantly updated (ie player, not walls/static objects) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a5d1c987dbd37f1da1496915d4a754d70}\label{classcollision_1_1levelmanager_1_1_level_manager_a5d1c987dbd37f1da1496915d4a754d70}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a5d1c987dbd37f1da1496915d4a754d70}{x}
+\begin{DoxyCompactList}\small\item\em X-\/\+Coordinate of the level in leveldata\textquotesingle{}s Room ID array (R\+ID\mbox{[}y\mbox{]}\mbox{[}x\mbox{]}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a5b6011487a9ea527e43194554dbf1326}\label{classcollision_1_1levelmanager_1_1_level_manager_a5b6011487a9ea527e43194554dbf1326}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a5b6011487a9ea527e43194554dbf1326}{y}
+\begin{DoxyCompactList}\small\item\em Y-\/\+Coordinate of the level in leveldata\textquotesingle{}s Room ID array (R\+ID\mbox{[}y\mbox{]}\mbox{[}x\mbox{]}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_ab209d49d600cc240e4faa3fa4a74c9f1}\label{classcollision_1_1levelmanager_1_1_level_manager_ab209d49d600cc240e4faa3fa4a74c9f1}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_ab209d49d600cc240e4faa3fa4a74c9f1}{level}
+\begin{DoxyCompactList}\small\item\em Level background. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a7821297ccd39fd8cb2c2adec0eeaaf8f}\label{classcollision_1_1levelmanager_1_1_level_manager_a7821297ccd39fd8cb2c2adec0eeaaf8f}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a7821297ccd39fd8cb2c2adec0eeaaf8f}{R\+ID}
+\begin{DoxyCompactList}\small\item\em Misc room spawnings (ie shop room) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a28b8cccf02562bdc237c121e45c3a257}\label{classcollision_1_1levelmanager_1_1_level_manager_a28b8cccf02562bdc237c121e45c3a257}} 
+{\bfseries enarray}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a0f109f01f7dc8b59549e33af889da0ea}\label{classcollision_1_1levelmanager_1_1_level_manager_a0f109f01f7dc8b59549e33af889da0ea}} 
+{\bfseries boss}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_af88edf373a7c00e94164fccca24c07f3}\label{classcollision_1_1levelmanager_1_1_level_manager_af88edf373a7c00e94164fccca24c07f3}} 
+{\bfseries doors}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a755ccaf64de0484a559d99ac313d2fc4}\label{classcollision_1_1levelmanager_1_1_level_manager_a755ccaf64de0484a559d99ac313d2fc4}} 
+{\bfseries killed}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_aeaa35419e04210eb9b2c8b41a496fbb2}\label{classcollision_1_1levelmanager_1_1_level_manager_aeaa35419e04210eb9b2c8b41a496fbb2}} 
+list {\bfseries keyset} = \mbox{[}3, 7, 17\mbox{]}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a116fbcd53b1b8da40479cb5db10e21ac}\label{classcollision_1_1levelmanager_1_1_level_manager_a116fbcd53b1b8da40479cb5db10e21ac}} 
+list {\bfseries rupeset} = \mbox{[}1, 16, 12\mbox{]}
+\item 
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a6f0eec0ff65ac73c32225d1b9cd0ecaa}\label{classcollision_1_1levelmanager_1_1_level_manager_a6f0eec0ff65ac73c32225d1b9cd0ecaa}} 
+\hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a6f0eec0ff65ac73c32225d1b9cd0ecaa}{LD} = None
+\begin{DoxyCompactList}\small\item\em List of all rooms to load (to be altered) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dungeon Level Creation Class  Class used as a master constructor for every dungeon levels, getting pre-\/written data and loading it when the game starts and when a transition occurs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_ac15451905c2523ed3929d877762bb290}\label{classcollision_1_1levelmanager_1_1_level_manager_ac15451905c2523ed3929d877762bb290}} 
+\index{collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def collision.\+levelmanager.\+Level\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{spritelist,  }\item[{}]{collidlist,  }\item[{}]{updatelist }\end{DoxyParamCaption})}
+
+
+
+Dungeon Level Master Initializer  The class initializer, taking empty lists, each for letting the \hyperlink{classcollision_1_1levelmanager_1_1_level_manager_a02aa3ee9b35d68c9386517c518c101f4}{make()} function define what objects need to be drawn/collidable/updatable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spritelist} & List of objects for the game to print (usually empty pygame.\+sprite.\+Group) \\
+\hline
+{\em collidlist} & List of objects which have a collision interaction with the player (usually empty pygame.\+sprite.\+Group) \\
+\hline
+{\em updatelist} & List of objects which need to be regularly updated (usually empty pygame.\+sprite.\+Group) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_a02aa3ee9b35d68c9386517c518c101f4}\label{classcollision_1_1levelmanager_1_1_level_manager_a02aa3ee9b35d68c9386517c518c101f4}} 
+\index{collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}!make@{make}}
+\index{make@{make}!collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}}
+\subsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily def collision.\+levelmanager.\+Level\+Manager.\+make (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Dungeon Level Constructor  The main function to load a given index of data from leveldata.\+py, and load it into the game environment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of the room to be created \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcollision_1_1levelmanager_1_1_level_manager_ac73f0ef69a1d1ff85a906a68cb1e2c86}\label{classcollision_1_1levelmanager_1_1_level_manager_ac73f0ef69a1d1ff85a906a68cb1e2c86}} 
+\index{collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}!transition@{transition}}
+\index{transition@{transition}!collision\+::levelmanager\+::\+Level\+Manager@{collision\+::levelmanager\+::\+Level\+Manager}}
+\subsubsection{\texorpdfstring{transition()}{transition()}}
+{\footnotesize\ttfamily def collision.\+levelmanager.\+Level\+Manager.\+transition (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{xchange,  }\item[{}]{ychange }\end{DoxyParamCaption})}
+
+
+
+Dungeon level transition function, used to go to an adjacent level, clear all current data, and load new room data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & Value to add to the current index to get to new room \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/collision/\hyperlink{levelmanager_8py}{levelmanager.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+THE LEGEND OF PYTHON USER GUIDE
+By Giacomo Loparco, Bilal Jaffry, and Lucas Zacharewicz
+
+                   (                                            (                            
+  *   )   )        )\ )                       (          (      )\ )        )   )            
+` )  /(( /(   (   (()/(   (  (  (    (        )\ )       )\ )  (()/((    ( /(( /(            
+ ( )(_))\()) ))\   /(_)) ))\ )\))(  ))\ (    (()/(    ( (()/(   /(_))\ ) )\())\()) (   (     
+(_(_()|(_)\ /((_) (_))  /((_|(_))\ /((_))\ )  ((_))   )\ /(_)) (_))(()/((_))((_)\  )\  )\ )  
+|_   _| |(_|_))   | |  (_))  (()(_|_)) _(_/(  _| |   ((_|_) _| | _ \)(_)) |_| |(_)((_)_(_/(  
+  | | | ' \/ -_)  | |__/ -_)/ _` |/ -_) ' \)) _` |  / _ \|  _| |  _/ || |  _| ' \/ _ \ ' \)) 
+  |_| |_||_\___|  |____\___|\__, |\___|_||_|\__,_|  \___/|_|   |_|  \_, |\__|_||_\___/_||_|  
+                            |___/                                   |__/                     
+
+.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚
+
+TABLE OF CONTENTS:
+I. Introduction
+    {1.1} About This Game
+II. Running/Playing
+	{2.1} Starting The Game
+	{2.2} User Controls
+	{2.3} Environment Interactions
+III. Health and Cultural Concerns
+	{3.1} Take Breaks Between Play
+	{3.2} Potential Similarities
+
+.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚
+
+X-------------------------------------X
+|          I. Introduction            |
+X-------------------------------------X
+
+This section will cover the quick background and hopefully answer
+any questions you may have about the origins/development of this
+game.
+
+=> {1.1} About this game
+	This game is a remake of the origial The Legend of Zelda,
+released on the NES in 1986. We decided to remake this game since
+we all saw it both as a classic and fun experience to play, and
+as something we could build part of in the time frame given. Our
+new implementation is created using python3, a user-created game
+making library called pyGame, and make for running all the files
+together.
+
+.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚
+
+X-------------------------------------X
+|          II. Running/Playing	      |
+X-------------------------------------X
+
+This section will cover any topics dealing with running the code,
+in-game controls, and any environment interactions you should be 
+aware of before you start your journey into the game!
+
+=> {2.1} Starting The Game
+	To run, this game has some dependencies that need to be met by
+your system. This game runs on python3, using the pyGame engine,
+which can be installed at the following links, respectively:
+https://www.python.org/downloads/ (Version 3.7.1 or greater)
+https://www.pygame.org/download.shtml (Can also be installed
+using console commands (eg. pip install pygame))
+This game also uses make to run its main and depending files, which
+should already be installed, but if not, go through the guide for
+your specific system on how to install.
+	Once these have all been installed properly, to run the game,
+navigate your terminal to the parent folder of the game (containing
+the Makefile), and run 'make' in the console. If a window appears,
+it is working! If not, refer to your terminal for the error, as one
+of your dependencies may not be installed properly.
+
+NOTE: This game cannot be run off of running the main.py file in
+	python, it needs to be done through make!
+
+=> {2.2} User Controls
+	Once you have passed the main screen by pressing k, and waited
+through the brief loading screen, you will be greeted by a small
+green-and-brown character in the middle of a room. This is you! For
+the sake of the guide, they will be referred to as the "player". The
+player has both basic movement and attack functionality linked to 
+keys on the keyboard. These interactions are listed below:
++-----+-------------------------------------+
+| Key | Function                            |
++-----+-------------------------------------+
+|  W  | Move player up                      |
+|  S  | Move player down                    |
+|  A  | Move player left                    |
+|  D  | Move player right                   |
++-----+-------------------------------------+
+|  K  | Sword attack (damage enemy)         |
+|  L  | Boomerang attack (stun enemy)       |
++-----+-------------------------------------+
+|  M  | Mute in-game music                  |
+|  N  | Un-mute in-game music               |
++-----+-------------------------------------+
+
+=> {2.3} Environment Interactions
+	Your player has multiple interactions and variables to look out for!
+Firstly, the top black bar above the room is the HUD, and will keep track
+of your health, rupy count, and key count. Your health will start at 3,
+and will go down when colliding with enemies, and go up by picking up
+heart items. Your rupy count is a count of your in-game currency, which
+can be incremented by picking up rupy items, and used in a secret room! The
+key count is the count of how many keys you currently have, which can be
+incremented by picking up a key. Whenever there is a door with a keyhole
+in it, it requires at least one key to open. Walking into the door for half
+a second will decrement your key counter, and permanently open the door.
+	There are also enemies to watch out for in the game! When you enter a
+room with enemies, all doors (except for locked doors) will be "blocked",
+meaning that they will not open until all enemies in the room are defeated.
+There are two types of enemies and one boss. Hitting an enemy/boss with
+your sword will take away one health point from them, and hitting them 
+with your boomerang will stun them for a set amount of time, stopping them
+from moving and attacking. If an enemy collides with you, though, you
+will be hurt for a set amound of damage, depending on the enemy. Lose all
+three hearts and you will die!
+	The "keese" enemy is an enemy which mimics a bat. It can move around
+to random places, even through walls. They have one health point, will
+take away half a health point from you if you collide with them, and can
+drop either a rupy or a heart.
+	The "stalfos" enemy is an enemy which mimics a skeleton. It walks in
+a random direction, changing whenever it collides with a wall, player, or
+after a set time. They have two health points, will take away one health
+point from you if you collide with them, and can drop either a rupy or a
+heart.
+	The "aquamentus" boss is the final boss of the game! It walks back
+and forth, shooting fireballs, which deal one health point of damage.
+It has five health points, and colliding with it will deal two health
+points of damage to the player. Aquamentus does not drop anything, but
+is defending a serious reward!
+	Once a room has been cleared of all enemies/bosses, the blocked doors
+will open, and some set rooms will give you a key or multiple rupys. It
+is not random which room will drop which, it is impossible to softlock the
+game. So if your path is blocked by a locked door, try going down other
+paths, going into rooms you haven't been before to try to find a key!
+
+
+.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚
+
+Good luck and have fun!
+
+
+.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚•.•˚
+
+X------------------------------------------------X
+|        III. Health and Cultural Concerns       |
+X------------------------------------------------X
+This section addresses any outstanding issues regarding health and safety 
+concerns when operating the software and aswell as any potential idealogical 
+commentaries that the software application potentially invokes.
+
+=> {3.1} Take Breaks Between Play
+	This game is meant to be enjoyed by the you, the player, but this enjoyment 
+should not come at the cost of your personal health. Remember to take frequent
+breaks between gameplay sessions and to ensure you take at least a 15 minute 
+rest between sessions lasting longer than 60 minutes. Please remember, its a video
+game its supposed to be fun! It's no fun when you are tiring yourself out!
+
+=> {3.2} Potential Similarities
+	Any similarities regarding any cultural, historical, political figures/event/beliefs 
+are purely coincidental and do not represent the intent of the creators of this project.
+

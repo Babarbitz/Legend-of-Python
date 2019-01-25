@@ -1,0 +1,142 @@
+\hypertarget{classactor_1_1boss_1_1_boss}{}\section{actor.\+boss.\+Boss Class Reference}
+\label{classactor_1_1boss_1_1_boss}\index{actor.\+boss.\+Boss@{actor.\+boss.\+Boss}}
+
+
+Superclass for representing a \hyperlink{classactor_1_1boss_1_1_boss}{Boss}.  
+
+
+Inheritance diagram for actor.\+boss.\+Boss\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classactor_1_1boss_1_1_boss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1boss_1_1_boss_a8aff9faf12326306058968f2e6424420}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a5f510a5ea8387c4ccb1c5c36e54efa5d}\label{classactor_1_1boss_1_1_boss_a5f510a5ea8387c4ccb1c5c36e54efa5d}} 
+def \hyperlink{classactor_1_1boss_1_1_boss_a5f510a5ea8387c4ccb1c5c36e54efa5d}{check\+State} (self)
+\begin{DoxyCompactList}\small\item\em Empty function for evaluating \hyperlink{classactor_1_1boss_1_1_boss}{Boss} state. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1boss_1_1_boss_aa4ec284ad22d7c18bfa7116e4b2863cf}{move} (self)
+\begin{DoxyCompactList}\small\item\em Moves the \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a005977210760040c8af8f77972e068a0}\label{classactor_1_1boss_1_1_boss_a005977210760040c8af8f77972e068a0}} 
+def \hyperlink{classactor_1_1boss_1_1_boss_a005977210760040c8af8f77972e068a0}{boss\+Logic} (self)
+\begin{DoxyCompactList}\small\item\em Empty function for logic of \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1boss_1_1_boss_a0caeabbf20958679e55952559a2b74ee}{update} (self)
+\begin{DoxyCompactList}\small\item\em Update loop for a \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1boss_1_1_boss_a6909e66b1a94f284ff34d2498a807c48}{hit} (self, dir)
+\begin{DoxyCompactList}\small\item\em Hit dectetion for \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a33e43928fc50f5c67693e2a224e2a67c}\label{classactor_1_1boss_1_1_boss_a33e43928fc50f5c67693e2a224e2a67c}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a33e43928fc50f5c67693e2a224e2a67c}{image}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss} Pygame surface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a0d5392b6ba783f8c3ad68221830f26ec}\label{classactor_1_1boss_1_1_boss_a0d5392b6ba783f8c3ad68221830f26ec}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a0d5392b6ba783f8c3ad68221830f26ec}{rect}
+\begin{DoxyCompactList}\small\item\em Rectanlge that represents boss. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1boss_1_1_boss_a88b3aa7689b1d755e49e5dfbf7f30e86}{id}
+\begin{DoxyCompactList}\small\item\em X postion of the boss. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_af197ba273deff12d755b58ba7d5dca8d}\label{classactor_1_1boss_1_1_boss_af197ba273deff12d755b58ba7d5dca8d}} 
+\hyperlink{classactor_1_1boss_1_1_boss_af197ba273deff12d755b58ba7d5dca8d}{is\+Hit}
+\begin{DoxyCompactList}\small\item\em Wether the boss is hit or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a3bfec86c38534dee464d0f415812c90f}\label{classactor_1_1boss_1_1_boss_a3bfec86c38534dee464d0f415812c90f}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a3bfec86c38534dee464d0f415812c90f}{stuncount}
+\begin{DoxyCompactList}\small\item\em The amount of stun frames the boss has remaining. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a91aaf2376c5832f358df81e770d8e29f}\label{classactor_1_1boss_1_1_boss_a91aaf2376c5832f358df81e770d8e29f}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a91aaf2376c5832f358df81e770d8e29f}{max\+HP}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} max health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a86450ea10beac44c78eec4b05ddb09d0}\label{classactor_1_1boss_1_1_boss_a86450ea10beac44c78eec4b05ddb09d0}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a86450ea10beac44c78eec4b05ddb09d0}{HP}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} current health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a6a30d961adcdcf26fdcae6fb83801f8c}\label{classactor_1_1boss_1_1_boss_a6a30d961adcdcf26fdcae6fb83801f8c}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a6a30d961adcdcf26fdcae6fb83801f8c}{dmg}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} damage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a9884f8252599e809ccca0f09c13e7883}\label{classactor_1_1boss_1_1_boss_a9884f8252599e809ccca0f09c13e7883}} 
+\hyperlink{classactor_1_1boss_1_1_boss_a9884f8252599e809ccca0f09c13e7883}{hit\+Count}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} hit count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_aa8507ebe3d7bf619d0e630af700a18eb}\label{classactor_1_1boss_1_1_boss_aa8507ebe3d7bf619d0e630af700a18eb}} 
+\hyperlink{classactor_1_1boss_1_1_boss_aa8507ebe3d7bf619d0e630af700a18eb}{x\+Speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} speed in the x direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_af3ffc8e8c2a5637f468355a055d4671f}\label{classactor_1_1boss_1_1_boss_af3ffc8e8c2a5637f468355a055d4671f}} 
+\hyperlink{classactor_1_1boss_1_1_boss_af3ffc8e8c2a5637f468355a055d4671f}{y\+Speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boss_1_1_boss}{Boss}\textquotesingle{} speed in the y direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_aca7d6c634a4af8380231efe3c2636080}\label{classactor_1_1boss_1_1_boss_aca7d6c634a4af8380231efe3c2636080}} 
+\hyperlink{classactor_1_1boss_1_1_boss_aca7d6c634a4af8380231efe3c2636080}{frame\+Counter}
+\begin{DoxyCompactList}\small\item\em Total number of frames the boss has been alive for. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Superclass for representing a \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a8aff9faf12326306058968f2e6424420}\label{classactor_1_1boss_1_1_boss_a8aff9faf12326306058968f2e6424420}} 
+\index{actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+boss.\+Boss.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. 
+
+Constructor takes two parameters, the x and y coordinates 
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the starting postion of the \hyperlink{classactor_1_1boss_1_1_boss}{Boss} \\
+\hline
+{\em y} & Y coordinate of the starting postion of the \hyperlink{classactor_1_1boss_1_1_boss}{Boss} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a6909e66b1a94f284ff34d2498a807c48}\label{classactor_1_1boss_1_1_boss_a6909e66b1a94f284ff34d2498a807c48}} 
+\index{actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}!hit@{hit}}
+\index{hit@{hit}!actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}}
+\subsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily def actor.\+boss.\+Boss.\+hit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dir }\end{DoxyParamCaption})}
+
+
+
+Hit dectetion for \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. 
+
+Handles health and iframes \mbox{\Hypertarget{classactor_1_1boss_1_1_boss_aa4ec284ad22d7c18bfa7116e4b2863cf}\label{classactor_1_1boss_1_1_boss_aa4ec284ad22d7c18bfa7116e4b2863cf}} 
+\index{actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}!move@{move}}
+\index{move@{move}!actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def actor.\+boss.\+Boss.\+move (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Moves the \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. 
+
+Adds the x speed and y speed to the x and y postion of the \hyperlink{classactor_1_1boss_1_1_boss}{Boss} \mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a0caeabbf20958679e55952559a2b74ee}\label{classactor_1_1boss_1_1_boss_a0caeabbf20958679e55952559a2b74ee}} 
+\index{actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}!update@{update}}
+\index{update@{update}!actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def actor.\+boss.\+Boss.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Update loop for a \hyperlink{classactor_1_1boss_1_1_boss}{Boss}. 
+
+Checks state, does the logic, and then moves \hyperlink{classactor_1_1boss_1_1_boss}{Boss} 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactor_1_1boss_1_1_boss_a88b3aa7689b1d755e49e5dfbf7f30e86}\label{classactor_1_1boss_1_1_boss_a88b3aa7689b1d755e49e5dfbf7f30e86}} 
+\index{actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}!id@{id}}
+\index{id@{id}!actor\+::boss\+::\+Boss@{actor\+::boss\+::\+Boss}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily actor.\+boss.\+Boss.\+id}
+
+
+
+X postion of the boss. 
+
+Y postion of the boss \hyperlink{classactor_1_1boss_1_1_boss}{Boss} ID 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{boss_8py}{boss.\+py}\end{DoxyCompactItemize}

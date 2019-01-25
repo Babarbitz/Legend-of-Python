@@ -1,0 +1,70 @@
+\hypertarget{boomerang_8py}{}\section{src/actor/boomerang.py File Reference}
+\label{boomerang_8py}\index{src/actor/boomerang.\+py@{src/actor/boomerang.\+py}}
+
+
+Boomerang Weapon  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classactor_1_1boomerang_1_1_boomerang}{actor.\+boomerang.\+Boomerang}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang} Weapon Class  The class holding the creation, behaviour, and collision effects of the player\textquotesingle{}s boomerang weapon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{boomerang_8py_a8d197eab0bf6f54621960f429f24f0b5}{actor.\+boomerang.\+populate\+Sprites} ()
+\begin{DoxyCompactList}\small\item\em Creates the sprite list for \hyperlink{classactor_1_1boomerang_1_1_boomerang}{Boomerang}. \end{DoxyCompactList}\item 
+def \hyperlink{boomerang_8py_a34a1a69f80c09f481480afccdc2f460a}{actor.\+boomerang.\+stuncoeffient} (x)
+\begin{DoxyCompactList}\small\item\em Finds the coeffient for the stun value  Uses a quadradic equation with the frame counter to find the coefficent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{boomerang_8py_a6f92a4644bc9f8e6b3bb23b154ddabfc}\label{boomerang_8py_a6f92a4644bc9f8e6b3bb23b154ddabfc}} 
+string {\bfseries actor.\+boomerang.\+S\+P\+R\+I\+T\+E\+\_\+\+M\+AP} = \textquotesingle{}src/actor/sprites/boomerang.\+png\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Boomerang Weapon 
+
+\begin{DoxyAuthor}{Author}
+Giacomo Loparco, Bilal Jaffry, Lucas Zacharewicz 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+November 6 2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{boomerang_8py_file_a8d197eab0bf6f54621960f429f24f0b5}\label{boomerang_8py_file_a8d197eab0bf6f54621960f429f24f0b5}} 
+\index{boomerang.\+py@{boomerang.\+py}!populate\+Sprites@{populate\+Sprites}}
+\index{populate\+Sprites@{populate\+Sprites}!boomerang.\+py@{boomerang.\+py}}
+\subsubsection{\texorpdfstring{populate\+Sprites()}{populateSprites()}}
+{\footnotesize\ttfamily def actor.\+boomerang.\+populate\+Sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the sprite list for Boomerang. 
+
+Iterates through a sprite sheet to pull images for the sprite array \begin{DoxyReturn}{Returns}
+sprites Array if the sprites that represent the Boomerang 
+\end{DoxyReturn}
+\mbox{\Hypertarget{boomerang_8py_file_a34a1a69f80c09f481480afccdc2f460a}\label{boomerang_8py_file_a34a1a69f80c09f481480afccdc2f460a}} 
+\index{boomerang.\+py@{boomerang.\+py}!stuncoeffient@{stuncoeffient}}
+\index{stuncoeffient@{stuncoeffient}!boomerang.\+py@{boomerang.\+py}}
+\subsubsection{\texorpdfstring{stuncoeffient()}{stuncoeffient()}}
+{\footnotesize\ttfamily def actor.\+boomerang.\+stuncoeffient (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Finds the coeffient for the stun value  Uses a quadradic equation with the frame counter to find the coefficent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The current frame of the boomerang \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+c The coefficent for the boomerang stun 
+\end{DoxyReturn}

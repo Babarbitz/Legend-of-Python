@@ -1,0 +1,844 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\title{SE 3XA3: Test Report\\Legend of Python}
+
+\author{Team \# 1, Lava Boys Inc
+		\\ Bilal Jaffry, jaffryb
+		\\ Giacomo Loparco, loparcog
+		\\ Lucas Zacharewicz, zacharel
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\begin{table}[ht]
+\caption{\bf Revision History}
+\begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
+\toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
+\midrule
+December 3rd & 1.0 & Rev 1 Submission\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Functional Requirements Evaluation}
+
+\subsection{User Input Tests}
+
+Test Name: FR-USR-01\\
+
+Result: The user is able to move in all intended directions.\\
+
+Test Name: FR-USR-02\\
+
+Result: Player is locked into one direction as long as they hold that key (intended behavior).\\
+
+Test Name: FR-USR-03\\
+
+Result: The user is able to enter and leave the attack state.\\
+
+Test Name: FR-USR-04\\
+
+Result: The user is unable to move during the attack state.\\
+
+Test Name: FR-USR-05\\
+
+Result: The user experiences an input delay between attacks.\\
+
+Test Name: FR-USR-06\\
+
+Result: THe player is able to use the boomerang item.\\
+
+\subsection{Player Interaction Tests}
+
+Test Name: FR-PLYR-01\\
+
+Result: The player collides with the wall and is unable to move through it.\\
+
+Test Name: FR-PLYR-02\\
+
+Result: The player collides with the enemy, takes damage, and is knocked back.\\
+
+Test Name: FR-PLYR-03\\
+
+Result: The player collides and picks up the item with the rupee count incrementing by 1.\\
+
+Test Name: FR-PLYR-04\\
+
+Result: The player collides and picks up the item with the key count incrementing by 1.\\
+
+Test Name: FR-PLYR-05\\
+
+Result: The player collides and picks up the item with the health count incrementing by 1.\\
+
+Test Name: FR-PLYR-06\\
+
+Result: The player collides with the boomerang and it is added to the player's inventory.\\
+
+Test Name: FR-PLYR-07\\
+
+Result: The player enters the attack state, the player's sword collides with the enemey, and the enemy takes the appropriate amount of damage.\\
+
+Test Name: FR-PLYR-08\\
+
+Result: The player dies and the game over screen appears.\\
+
+Test Name: FR-PLYR-09\\
+
+Result: The player uses the boomerang, it moves in the same direction the player is facing, the boomerang returns to the player.\\
+
+Test Name: FR-PLYR-10\\
+
+Result: The player throws the boomerang at the enemy stunning it for the set amount of time.\\
+
+Test Name: FR-PLYR-11\\
+
+Result: The player collides with the final item and the game complete screen appears.\\
+
+\subsection{Enemy Interaction Tests}
+
+Test Name: FR-ENMY-01\\
+
+Result: Keese stays within the confines of the room.\\
+
+Test Name: FR-ENMY-02\\
+
+Result: The keese movement is consistent with the original projects.\\
+
+Test Name: FR-ENMY-03\\
+
+Result: Stalfos stays within the confines of the room.\\
+
+Test Name: FR-ENMY-04\\
+
+Result: The stalfos movement is consistent with the original projects.\\
+
+Test Name: FR-ENMY-05\\
+
+Result: Aquamentus attacks at specified time intervals.\\
+
+Test Name: FR-ENMY-06\\
+
+Result: Aquamentus's attacks are consistent with the original version.\\
+
+\subsection{Dungeon Interactions/Creation Tests}
+
+Test Name: FR-DUNG-01\\
+
+Result: The player is able to move between rooms.\\
+
+Test Name: FR-DUNG-02\\
+
+Result: The player is able to unlock the door.\\
+
+Test Name: FR-DUNG-03\\
+
+Result: The player collides with the door and it stays locked.\\
+
+Test Name: FR-DUNG-04\\
+
+Result: The player is able to unlock the door.\\
+
+Test Name: FR-DUNG-05\\
+
+Result: The player completes the objective and the door opens.\\
+
+Test Name: FR-DUNG-06\\
+
+Result: The player is spawned into the full map and is able to traverse every room.\\
+
+\section{Nonfunctional Requirements Evaluation}
+
+\subsection{Look and Feel}
+
+Test Name: NFC-LF-01\\
+
+Result: 4 of 4 users did not indicate a decline in animation quality.\\
+
+Test Name: NFC-LF-02\\
+
+Result: 4 of 4 users did not discern any difference between this implementation and the original project.\\
+
+\subsection{Usability}
+
+Test Name: NFC-USE-01\\
+
+Result: 4 of 4 users indicated that the controls were easy to learn with a low learning curve.\\
+
+Test Name: NFC-USE-02\\
+
+Result: 4 of 4 indicated that the mechanics between the two implementations are similar.\\
+
+\subsection{Performance}
+
+Test Name: NFC-PER-01\\
+
+Result: The game showed no signs of slowed down during stress testing.\\
+
+Test Name: NFC-PER-02\\
+
+Result: The game showed quick loading times under 1 second.\\
+
+\section{Comparison to Existing Implementation}	
+
+There are several differences between the existing implementations of The Legend of Zelda and our version of it. The majority of the differences come with the sheer amount of content lacking from our implementation as our scope had to be narrowed in order to keep on track with the project. This encapsulates features such as the main overworld, additional items for the player's use, secrete areas, and the remaining 7 dungeons not imagined in our implementation. With those differences out of the way, the remaining comparison comes to the look and feel of each of the implementations and their functionality compared to the original. The open source project we chose had no animations and was not a running in a game loop (i.e. everything would update when the player made a move). Our implementation aimed to be closer to the original version of the game than the open source project with clear benefit in playability over the open source implementation. Provided we continue with the project in the future, our implementation has potential to encapsulate a better experience than the open source project and perhaps the original.
+
+
+\section{Unit Testing}
+
+\subsection{Aquamentus}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & AQU1 \\ 
+		\hline
+		\textbf{Initial State} & Aquamentus Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates to create an aquamentus object in \\ 
+		\hline 
+		\textbf{Expected Output} & The aquamentus object is at the given x value, and at the y value plus the game's Y-offset, for the hud\\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for AQU1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & AQU2 \\ 
+		\hline
+		\textbf{Initial State} & Aquamentus moving in an x direction (forward) \\ 
+		\hline
+		\textbf{Input} & Function to reverse direction \\ 
+		\hline 
+		\textbf{Expected Output} & Aquamentus velocity is now negative of the original state (moving backwards)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for AQU2}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & AQU3 \\ 
+		\hline
+		\textbf{Initial State} & Aquamentus not attacking \\ 
+		\hline
+		\textbf{Input} & Function to make aquamentus object attack \\ 
+		\hline 
+		\textbf{Expected Output} & Aquamentus is now attacking  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for AQU3}
+	\label{Table}
+\end{table}
+
+\newpage
+
+\subsection{Boss}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & BOSS1 \\ 
+		\hline
+		\textbf{Initial State} & Boss Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates \\ 
+		\hline 
+		\textbf{Expected Output} & The boss object is at the given x value, and at the y value plus the game's Y-offset, for the hud  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for BOSS1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & BOSS2 \\ 
+		\hline
+		\textbf{Initial State} & Boss with speed 3 \\ 
+		\hline
+		\textbf{Input} & Function to make the boss move \\ 
+		\hline 
+		\textbf{Expected Output} & Boss x-coordinate is now 3 pixels more than what it was before (xnew = xold + 3)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for BOSS2}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|l|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & BOSS3 \\ 
+		\hline
+		\textbf{Initial State} & Boss object \\ 
+		\hline
+		\textbf{Input} & Function to make boss take one point of health damage \\ 
+		\hline 
+		\textbf{Expected Output} & The boss is now hit (boolean is now true)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for BOSS3}
+	\label{Table}
+\end{table}
+
+\newpage
+
+\subsection{Enemy}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & ENM1 \\ 
+		\hline
+		\textbf{Initial State} & Enemy Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates \\ 
+		\hline 
+		\textbf{Expected Output} & The enemy object is at the given x value, and at the y value plus the game's Y-offset, for the hud  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for ENM1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & ENM2 \\ 
+		\hline
+		\textbf{Initial State} & Enemy with speed 3 \\ 
+		\hline
+		\textbf{Input} & Function to make the enemy move \\ 
+		\hline 
+		\textbf{Expected Output} & Enemy x-coordinate is now 3 pixels more than what it was before (xnew = xold + 3)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for ENM2}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & ENM3 \\ 
+		\hline
+		\textbf{Initial State} & Enemy object \\ 
+		\hline
+		\textbf{Input} & Function to make enemy take one point of health damage \\ 
+		\hline 
+		\textbf{Expected Output} & The enemy is now hit (boolean is now true)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for ENM3}
+	\label{Table}
+\end{table}
+
+\newpage
+
+
+\subsection{Fireball}
+
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & FBL1 \\ 
+		\hline
+		\textbf{Initial State} & Fireball Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates, along with x and y directional speeds \\ 
+		\hline 
+		\textbf{Expected Output} & The fireball object is at the given x and y coordinates, with the same given x and y direction speeds  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for FBL1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & FBL2 \\ 
+		\hline
+		\textbf{Initial State} & Fireball object \\ 
+		\hline
+		\textbf{Input} & Function to start movement of fireball, giving an (x, y) position and (x, y) velocity \\ 
+		\hline 
+		\textbf{Expected Output} & The fireball is now at the given x and y coordinates, with the new x and y directional speeds  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for FBL2}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & FBL3 \\ 
+		\hline
+		\textbf{Initial State} & Fireball object \\ 
+		\hline
+		\textbf{Input} & Function to end movement of fireball \\ 
+		\hline 
+		\textbf{Expected Output} & The fireball is now out of screen, with its x and y coordinates at -1000, and its x and y speeds at 0  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for FBL3}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & FBL4 \\ 
+		\hline
+		\textbf{Initial State} & Fireball object \\ 
+	\hline
+	\textbf{Input} & Function to start movement of fireball, giving an (x, y) position and (x, y) velocity, along with a move function \\ 
+	\hline 
+	\textbf{Expected Output} & The fireball is now at the given x and y coordinates, plus the x and y velocity, respectively, with the new x and y directional speeds  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for FBL4}
+	\label{Table}
+\end{table}
+
+\newpage
+
+\subsection{Item}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & ITEM1 \\ 
+		\hline
+		\textbf{Initial State} & Item Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates, along with an item type (integer from 0 to 5) \\ 
+		\hline 
+		\textbf{Expected Output} & The item object is at the given x and y coordinates, with the same type as the one given  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for ITEM1}
+	\label{Table}
+\end{table}
+
+\subsection{Keese}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE1 \\ 
+		\hline
+		\textbf{Initial State} & Keese Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates \\ 
+		\hline 
+		\textbf{Expected Output} & The keese object is at the given x value, and at the y value plus the game's Y-offset, for the hud  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE2 \\ 
+		\hline
+		\textbf{Initial State} & Keese object \\ 
+		\hline
+		\textbf{Input} & Function to make the keese object rest for a random amount of time \\ 
+		\hline 
+		\textbf{Expected Output} & The keese object is either set to wait 1 or 2 seconds, and it's sprite frames are on rest (ie only show keese with closed wings)  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE2}
+	\label{Table}
+\end{table}
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE3 \\ 
+		\hline
+		\textbf{Initial State} & Keese object \\ 
+		\hline
+		\textbf{Input} & Function to generate a travel point for the keese to go to \\ 
+		\hline 
+		\textbf{Expected Output} & The distance of the keese to the generated point is greater than the minimum set value  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE3}
+	\label{Table}
+\end{table}
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE4 \\ 
+		\hline
+		\textbf{Initial State} & Keese object with sprite index at 0 \\ 
+		\hline
+		\textbf{Input} & Function to make the keese object switch sprites \\ 
+		\hline 
+		\textbf{Expected Output} & The keese object sprite index is now at 1  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE4}
+	\label{Table}
+\end{table}
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE5 \\ 
+		\hline
+		\textbf{Initial State} & Keese object \\ 
+		\hline
+		\textbf{Input} & Function to make keese stop moving \\ 
+		\hline 
+		\textbf{Expected Output} & The keese object's x and y velocity are set to 0  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE5}
+	\label{Table}
+\end{table}
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & KSE6 \\ 
+		\hline
+		\textbf{Initial State} & Keese object \\ 
+		\hline
+		\textbf{Input} & Function to set movement speed based on a specific travel point \\ 
+		\hline 
+		\textbf{Expected Output} & The x and y velocity of the keese moves the object towards the given point  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for KSE6}
+	\label{Table}
+\end{table}
+
+\newpage
+
+\subsection{Stalfos}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & STAL1 \\ 
+		\hline
+		\textbf{Initial State} & Stalfos Constructor \\ 
+		\hline
+		\textbf{Input} & Valid x and y coordinates \\ 
+		\hline 
+		\textbf{Expected Output} & The stalfos object is at the given x value, and at the y value plus the game's Y-offset, for the hud  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for STAL1}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & STAL2 \\ 
+		\hline
+		\textbf{Initial State} & Stalfos object \\ 
+		\hline
+		\textbf{Input} & Function to make stalfos generate a travel path \\ 
+		\hline 
+		\textbf{Expected Output} & The stalfos object has a direction from 0 to 3, and has walking frames from 0 to 3  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for STAL2}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & STAL3 \\ 
+		\hline
+		\textbf{Initial State} & Stalfos object \\ 
+		\hline
+		\textbf{Input} & Setting walking speed in different directions \\ 
+		\hline 
+		\textbf{Expected Output} & If the direction is 0 or 2 (horizontal), the stalfos' x velocity is it's speed. If the direction is 
+		1 or 3 (vertical), the stalfos' y velocity is it's speed.  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for STAL3}
+	\label{Table}
+\end{table}
+
+\begin{table}[!htbp]
+	
+	\begin{tabular}[r]{|l|p{0.8\linewidth}|}
+		
+		\hline
+		%\label
+		
+		\textbf{Test Name} & STAL4 \\ 
+		\hline
+		\textbf{Initial State} & Stalfos object \\ 
+		\hline
+		\textbf{Input} & Function to make stalfos stop movement \\ 
+		\hline 
+		\textbf{Expected Output} & The stalfos' x and y velocity are both 0  \\ 
+		\hline
+		
+	\end{tabular}
+	\caption{Test for STAL4}
+	\label{Table}
+\end{table}
+
+
+\section{Changes Due to Testing}
+\subsection{Input Testing}
+There have been no changes to the specified input methods as a result of completed tests.
+
+\subsection{GUI Testing}
+There have been no changes to the specified  GUI methods as a result of completed tests.
+
+\subsection{Display Ouput Testing}
+There have been no changes to the specified output methods as a result of completed tests.
+
+\subsection{Level Testing}
+Upon testing the level transitioning for the manualTests.py module, the testing for this showed the non-playable characters
+showing unknown behavior when animating and moving around each level tile of the game. Upon further inspection,
+the cause for this was due to the sprites of a previous level being loaded below the new sprites of the current level. Each sprite
+in the game has a collide-able object and responds accordingly when collided with. \\
+
+This was the cause for the collision between the sprites to occur and was solved with a creation of a function which remembered to clear the sprite lists rendered on screen when transitioning to another level tile in the game.
+
+\section{Automated Testing}
+For automated testing for the project we used Pytest as the framework for our unit testing.
+Pytest was used to run all out unit tests, which can be found in section 4.0 of this document labeled 'Unit Testing'. All the tests cases
+written in our tests suite resulted in positive results, all asserting to be correct by the Pytest framework. 
+		
+		
+\section{Trace to Requirements}
+
+\begin{tabular}{ll}
+	\toprule
+	Test & Requirements \\
+	\midrule
+	\multicolumn{2}{c}{Functional Requirements Testing} \\
+	\midrule
+	FR-USR-01-06 & FR1, FR2, FR3, FR12, FR13 \\
+	FR-PLYR-01-11 & FR7, FR8, FR9, FR10, FR11, FR12, FR13, FR17, \\ 
+	& FR18, FR19, FR21, FR22, FR23, FR25, FR26\\
+	FR-ENMY-01-06 & FR7, FR14, FR15, FR16\\
+	FR-DUNG-01-06 & FR5, FR6, FR7, F24\\
+	\midrule
+	\multicolumn{2}{c}{Non-functional Requirements Testing} \\
+	\midrule
+	NFC-LF-01 & NFR1, NFR3, NFR5, NFR11 \\
+	NFC-LF-02 &  NFR1 \\
+	NFC-USE-01 &  NFR2 \\
+	NFC-USE-02 &  NFR1, NFR6, NFR 10 \\
+	NFC-PER-01 & NFR7 \\
+	NFC-PE-02 & NFR3, NFR4  \\
+	\midrule
+	\multicolumn{2}{c}{Unit Testing} \\
+	\midrule
+	AQU1-3 & FR7, FR14, FR15, FR16\\
+	BOSS1-3 & FR7, FR14\\ 
+	ENM1-3 & FR7, FR14\\
+	FBL1-4 & N/A\\
+	ITEM1 & FR8, FR21\\
+	KSE1-6 & FR7, FR14, FR15, FR16\\
+	STAL1-4 & FR7, FR14, FR15, FR16\\
+	\bottomrule
+\end{tabular}
+		
+\section{Trace to Modules}	
+
+\begin{tabular}{ll}
+	\toprule
+	Test & Modules \\
+	\midrule
+	\multicolumn{2}{c}{Functional Requirements Testing} \\
+	\midrule
+	FR-USR-01-06 & M2, M10, M15, M23 \\
+	FR-PLYR-01-11 & M8, M7, M10, M12, M20, M24, M25, M5\\
+	FR-ENMY-01-06 & M1, M3, M5, M9, M14, M20\\
+	FR-DUNG-01-06 & M16, M18, M19\\
+	\midrule
+	\multicolumn{2}{c}{Non-functional Requirements Testing} \\
+	\midrule
+	NFC-LF-01 & M13, M23 \\
+	NFC-LF-02 & M* \\
+	NFC-USE-01 & M10, M23 \\
+	NFC-USE-02 & M10, M23 \\
+	NFC-PER-01 & M* \\
+	NFC-PE-02 & M18, M19 \\
+	\midrule
+	\multicolumn{2}{c}{Unit Testing} \\
+	\midrule
+	AQU1-3 & M1, M3\\
+	BOSS1-3 & M3\\ 
+	ENM1-3 & M5\\
+	FBL1-4 & M6\\
+	ITEM1 & M8\\
+	KSE1-6 & M5, M9\\
+	STAL1-4 & M5, M14\\
+	\bottomrule
+\end{tabular}
+	
+	
+
+\section{Code Coverage Metrics}
+The Legend of Python project has managed to produce code coverage for 15 of our 25 modules. This yields an approximate 70 percent code coverage for the entire project. This number was determined by our unit testing modules which consisted of 7 internal modules, which had unit test cases written for the functionality of each module. The remaining 8 modules were covered during our manual testing suite, where levels would be loaded, along with the corresponding data, and would observe the functionality of each non-playable character and the collide- able objects within the room. This can be seen documented within our module trace section. The remaining modules could only be tested by executing the game state of the program and testing all bounds of the player character and its interaction with the environment, non-playable characters and consumable items.
+
+
+
+\bibliographystyle{plainnat}
+
+\bibliography{SRS}
+
+\end{document}

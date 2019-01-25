@@ -1,0 +1,110 @@
+\hypertarget{classactor_1_1healthbar_1_1_health___bar}{}\section{actor.\+healthbar.\+Health\+\_\+\+Bar Class Reference}
+\label{classactor_1_1healthbar_1_1_health___bar}\index{actor.\+healthbar.\+Health\+\_\+\+Bar@{actor.\+healthbar.\+Health\+\_\+\+Bar}}
+
+
+This class represents the Health\+Bar for the user controlled player character.  
+
+
+Inheritance diagram for actor.\+healthbar.\+Health\+\_\+\+Bar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classactor_1_1healthbar_1_1_health___bar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1healthbar_1_1_health___bar_a1f35a409c7e1fc7d36600891b7a4a796}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y)
+\begin{DoxyCompactList}\small\item\em Constructor Health\+Bar class. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1healthbar_1_1_health___bar_a13d9c179f223a080426841ed336407b5}{health} (self, i)
+\begin{DoxyCompactList}\small\item\em Method to update the current sprite image for the healthbar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classactor_1_1healthbar_1_1_health___bar_a46e7454053636308c9a17dd63e73a8ee}{image}
+\begin{DoxyCompactList}\small\item\em This represents the sprite image for the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1healthbar_1_1_health___bar_a75ae2266b6d6757be66530b63f413fbd}{h\+\_\+sprite\+\_\+sheet}
+\begin{DoxyCompactList}\small\item\em This represents the spritesheet for the image for the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object, containing all sprites associated with the health bar. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1healthbar_1_1_health___bar_add2392af674af1341a9bef3d18640e83}{rect}
+\begin{DoxyCompactList}\small\item\em This represents rectangle for position for the sprite image of the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents the Health\+Bar for the user controlled player character. 
+
+The Health\+Bar class uses the base class for visible game objects from Pygame library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1healthbar_1_1_health___bar_a1f35a409c7e1fc7d36600891b7a4a796}\label{classactor_1_1healthbar_1_1_health___bar_a1f35a409c7e1fc7d36600891b7a4a796}} 
+\index{actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+healthbar.\+Health\+\_\+\+Bar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor Health\+Bar class. 
+
+Constructor for class initializes the x and y location of the Health\+Bar object. 
+\begin{DoxyParams}{Parameters}
+{\em x} & this represents the x-\/coordinate at which the Health\+Bar object will be drawn. \\
+\hline
+{\em y} & this represents the y-\/coordinate at which the Health\+Bar object will be drawn. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1healthbar_1_1_health___bar_a13d9c179f223a080426841ed336407b5}\label{classactor_1_1healthbar_1_1_health___bar_a13d9c179f223a080426841ed336407b5}} 
+\index{actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}!health@{health}}
+\index{health@{health}!actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}}
+\subsubsection{\texorpdfstring{health()}{health()}}
+{\footnotesize\ttfamily def actor.\+healthbar.\+Health\+\_\+\+Bar.\+health (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i }\end{DoxyParamCaption})}
+
+
+
+Method to update the current sprite image for the healthbar. 
+
+This method will allow the Health\+Bar to update as soon as the player character is damaged/receives health. 
+\begin{DoxyParams}{Parameters}
+{\em i} & value represening the number of heart sprites to render to screen. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactor_1_1healthbar_1_1_health___bar_a75ae2266b6d6757be66530b63f413fbd}\label{classactor_1_1healthbar_1_1_health___bar_a75ae2266b6d6757be66530b63f413fbd}} 
+\index{actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}!h\+\_\+sprite\+\_\+sheet@{h\+\_\+sprite\+\_\+sheet}}
+\index{h\+\_\+sprite\+\_\+sheet@{h\+\_\+sprite\+\_\+sheet}!actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}}
+\subsubsection{\texorpdfstring{h\+\_\+sprite\+\_\+sheet}{h\_sprite\_sheet}}
+{\footnotesize\ttfamily actor.\+healthbar.\+Health\+\_\+\+Bar.\+h\+\_\+sprite\+\_\+sheet}
+
+
+
+This represents the spritesheet for the image for the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object, containing all sprites associated with the health bar. 
+
+\mbox{\Hypertarget{classactor_1_1healthbar_1_1_health___bar_a46e7454053636308c9a17dd63e73a8ee}\label{classactor_1_1healthbar_1_1_health___bar_a46e7454053636308c9a17dd63e73a8ee}} 
+\index{actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}!image@{image}}
+\index{image@{image}!actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily actor.\+healthbar.\+Health\+\_\+\+Bar.\+image}
+
+
+
+This represents the sprite image for the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object. 
+
+\mbox{\Hypertarget{classactor_1_1healthbar_1_1_health___bar_add2392af674af1341a9bef3d18640e83}\label{classactor_1_1healthbar_1_1_health___bar_add2392af674af1341a9bef3d18640e83}} 
+\index{actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}!rect@{rect}}
+\index{rect@{rect}!actor\+::healthbar\+::\+Health\+\_\+\+Bar@{actor\+::healthbar\+::\+Health\+\_\+\+Bar}}
+\subsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily actor.\+healthbar.\+Health\+\_\+\+Bar.\+rect}
+
+
+
+This represents rectangle for position for the sprite image of the \hyperlink{classactor_1_1healthbar_1_1_health___bar}{Health\+\_\+\+Bar} object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{healthbar_8py}{healthbar.\+py}\end{DoxyCompactItemize}

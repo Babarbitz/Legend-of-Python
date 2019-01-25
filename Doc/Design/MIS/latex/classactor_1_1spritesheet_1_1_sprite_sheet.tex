@@ -1,0 +1,119 @@
+\hypertarget{classactor_1_1spritesheet_1_1_sprite_sheet}{}\section{actor.\+spritesheet.\+Sprite\+Sheet Class Reference}
+\label{classactor_1_1spritesheet_1_1_sprite_sheet}\index{actor.\+spritesheet.\+Sprite\+Sheet@{actor.\+spritesheet.\+Sprite\+Sheet}}
+
+
+This class represents the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet} object, allowing sprites to be loaded and processed.  
+
+
+Inheritance diagram for actor.\+spritesheet.\+Sprite\+Sheet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classactor_1_1spritesheet_1_1_sprite_sheet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet_a00df0cb80c019436add7a699a83c5ae2}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet} class. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet_ad2c4f5b00c63a9377b64fe28ef26587b}{get\+\_\+image} (self, x, y, width, height)
+\begin{DoxyCompactList}\small\item\em Accessor to return an image splice from the loaded \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet_a2d0883c80dad8344520f40f6fd2b79a6}{get\+\_\+image\+NT} (self, x, y, width, height)
+\begin{DoxyCompactList}\small\item\em Accessor to return an image splice from the loaded \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}, W\+I\+T\+H\+O\+UT removing the image background. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet_ae4eb015142736df995f9564c47f4ddd6}{sprite\+\_\+sheet}
+\begin{DoxyCompactList}\small\item\em This represents the current spritesheet loaded from the specific file\+\_\+name path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet} object, allowing sprites to be loaded and processed. 
+
+The \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet} class uses the Pygame library to load images and change the transperancy on those images. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1spritesheet_1_1_sprite_sheet_a00df0cb80c019436add7a699a83c5ae2}\label{classactor_1_1spritesheet_1_1_sprite_sheet_a00df0cb80c019436add7a699a83c5ae2}} 
+\index{actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+spritesheet.\+Sprite\+Sheet.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet} class. 
+
+This constructor initializes an image file using the Pygame library. 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & This is the string representing the path to the image file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1spritesheet_1_1_sprite_sheet_ad2c4f5b00c63a9377b64fe28ef26587b}\label{classactor_1_1spritesheet_1_1_sprite_sheet_ad2c4f5b00c63a9377b64fe28ef26587b}} 
+\index{actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}!get\+\_\+image@{get\+\_\+image}}
+\index{get\+\_\+image@{get\+\_\+image}!actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{get\+\_\+image()}{get\_image()}}
+{\footnotesize\ttfamily def actor.\+spritesheet.\+Sprite\+Sheet.\+get\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
+
+
+
+Accessor to return an image splice from the loaded \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. 
+
+This accessor returns an image splice based on the x,y location and the height and width of the image. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate for starting point of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em y} & The y-\/coordinate for starting point of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em width} & The width of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em height} & The height of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image This returns the newly spliced image after removing the image background transparency. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classactor_1_1spritesheet_1_1_sprite_sheet_a2d0883c80dad8344520f40f6fd2b79a6}\label{classactor_1_1spritesheet_1_1_sprite_sheet_a2d0883c80dad8344520f40f6fd2b79a6}} 
+\index{actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}!get\+\_\+image\+NT@{get\+\_\+image\+NT}}
+\index{get\+\_\+image\+NT@{get\+\_\+image\+NT}!actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{get\+\_\+image\+N\+T()}{get\_imageNT()}}
+{\footnotesize\ttfamily def actor.\+spritesheet.\+Sprite\+Sheet.\+get\+\_\+image\+NT (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{width,  }\item[{}]{height }\end{DoxyParamCaption})}
+
+
+
+Accessor to return an image splice from the loaded \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}, W\+I\+T\+H\+O\+UT removing the image background. 
+
+This accessor returns an image splice based on the x,y location and the height and width of the image. 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate for starting point of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em y} & The y-\/coordinate for starting point of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em width} & The width of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+{\em height} & The height of the splice on the \hyperlink{classactor_1_1spritesheet_1_1_sprite_sheet}{Sprite\+Sheet}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+image This returns the newly spliced image W\+I\+T\+H\+O\+UT removing the image background transparency. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactor_1_1spritesheet_1_1_sprite_sheet_ae4eb015142736df995f9564c47f4ddd6}\label{classactor_1_1spritesheet_1_1_sprite_sheet_ae4eb015142736df995f9564c47f4ddd6}} 
+\index{actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}!sprite\+\_\+sheet@{sprite\+\_\+sheet}}
+\index{sprite\+\_\+sheet@{sprite\+\_\+sheet}!actor\+::spritesheet\+::\+Sprite\+Sheet@{actor\+::spritesheet\+::\+Sprite\+Sheet}}
+\subsubsection{\texorpdfstring{sprite\+\_\+sheet}{sprite\_sheet}}
+{\footnotesize\ttfamily actor.\+spritesheet.\+Sprite\+Sheet.\+sprite\+\_\+sheet}
+
+
+
+This represents the current spritesheet loaded from the specific file\+\_\+name path. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{spritesheet_8py}{spritesheet.\+py}\end{DoxyCompactItemize}

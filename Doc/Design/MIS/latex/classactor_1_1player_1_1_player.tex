@@ -1,0 +1,244 @@
+\hypertarget{classactor_1_1player_1_1_player}{}\section{actor.\+player.\+Player Class Reference}
+\label{classactor_1_1player_1_1_player}\index{actor.\+player.\+Player@{actor.\+player.\+Player}}
+
+
+\hyperlink{classactor_1_1player_1_1_player}{Player} Class  A pygame sprite subclass for defining the creation of the game\textquotesingle{}s playable character, as well as its interactions with both the user and other entities within the game.  
+
+
+Inheritance diagram for actor.\+player.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classactor_1_1player_1_1_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1player_1_1_player_ab706da8ac6c2ddecb694069c9c55485b}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y, hud)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player} constructor  The constructor for the player object, used within the initialization of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a43e8f90a1db2286bfb59f80853dcb336}\label{classactor_1_1player_1_1_player_a43e8f90a1db2286bfb59f80853dcb336}} 
+def \hyperlink{classactor_1_1player_1_1_player_a43e8f90a1db2286bfb59f80853dcb336}{movechar} (self)
+\begin{DoxyCompactList}\small\item\em Function to move the player in a specified direction. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1player_1_1_player_a8ac11a22aa47b7febd29d1c740f00452}{move} (self, d, b)
+\begin{DoxyCompactList}\small\item\em Function to store which movement buttons are being pressed and let go of by the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a2b481f9bd7f42a0dc98beec777ec5401}\label{classactor_1_1player_1_1_player_a2b481f9bd7f42a0dc98beec777ec5401}} 
+def \hyperlink{classactor_1_1player_1_1_player_a2b481f9bd7f42a0dc98beec777ec5401}{attack} (self)
+\begin{DoxyCompactList}\small\item\em Function to react to the user pressing the attack button, putting the player into an attack animation and spawning a sword for the duration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_aacc64de5a021da2b0cfd9535309617e3}\label{classactor_1_1player_1_1_player_aacc64de5a021da2b0cfd9535309617e3}} 
+def \hyperlink{classactor_1_1player_1_1_player_aacc64de5a021da2b0cfd9535309617e3}{useitem} (self)
+\begin{DoxyCompactList}\small\item\em Function to react to the user pressing the use item button, putting the player into an attack animation and spawning a boomerang for the duration. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1player_1_1_player_a709570fc745642d3ad2764e4d973491b}{moveupdate} (self)
+\begin{DoxyCompactList}\small\item\em U\+P\+D\+A\+TE L\+O\+OP F\+U\+N\+C\+T\+I\+O\+NS. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1player_1_1_player_ab05b71626b99e6cb0babce2d9f7bbb49}{attackupdate} (self)
+\begin{DoxyCompactList}\small\item\em Update function for attack and boomerang conditions, as well as handing user collision with enemies (damage taken)  Checks sword collision on enemies, and checks the timeout on both the sword and boomerang attack animations, telling the player when they can move again. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a427c65b6cb4d5b960493ead3cfc3fda1}\label{classactor_1_1player_1_1_player_a427c65b6cb4d5b960493ead3cfc3fda1}} 
+def \hyperlink{classactor_1_1player_1_1_player_a427c65b6cb4d5b960493ead3cfc3fda1}{collisionupdate} (self)
+\begin{DoxyCompactList}\small\item\em Update function to check collisions between the player and any specified collidable objects, and call their respective collision events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a20c476e0a1df612e3560916b9beda6ef}\label{classactor_1_1player_1_1_player_a20c476e0a1df612e3560916b9beda6ef}} 
+def \hyperlink{classactor_1_1player_1_1_player_a20c476e0a1df612e3560916b9beda6ef}{update} (self)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player} master update function, running all update functions, repeated in main file loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a3f083bf2ff3a0c9fd8838d1292eb6c24}\label{classactor_1_1player_1_1_player_a3f083bf2ff3a0c9fd8838d1292eb6c24}} 
+\hyperlink{classactor_1_1player_1_1_player_a3f083bf2ff3a0c9fd8838d1292eb6c24}{image}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player} sprite image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ae166fad5513e8a1afbf28b7090f84385}\label{classactor_1_1player_1_1_player_ae166fad5513e8a1afbf28b7090f84385}} 
+\hyperlink{classactor_1_1player_1_1_player_ae166fad5513e8a1afbf28b7090f84385}{id}
+\begin{DoxyCompactList}\small\item\em Collision ID (To tell other objects what this object is) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a80b827225d4cd1ece986735ed50ccaab}\label{classactor_1_1player_1_1_player_a80b827225d4cd1ece986735ed50ccaab}} 
+\hyperlink{classactor_1_1player_1_1_player_a80b827225d4cd1ece986735ed50ccaab}{leveltrans}
+\begin{DoxyCompactList}\small\item\em Boolean value to tell the game when the player has left the room, and a room transition is needed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a17fb13fa8c9bb02af137a6f5e83d2620}\label{classactor_1_1player_1_1_player_a17fb13fa8c9bb02af137a6f5e83d2620}} 
+\hyperlink{classactor_1_1player_1_1_player_a17fb13fa8c9bb02af137a6f5e83d2620}{rect}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player} x and y position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a6a324fb53de6ee4b4bab31ea3fc0ffcf}\label{classactor_1_1player_1_1_player_a6a324fb53de6ee4b4bab31ea3fc0ffcf}} 
+\hyperlink{classactor_1_1player_1_1_player_a6a324fb53de6ee4b4bab31ea3fc0ffcf}{walk\+Left}
+\begin{DoxyCompactList}\small\item\em Animation sprites for player walking left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ae4f80d82c8fa045ba5f244d3418b1a1a}\label{classactor_1_1player_1_1_player_ae4f80d82c8fa045ba5f244d3418b1a1a}} 
+\hyperlink{classactor_1_1player_1_1_player_ae4f80d82c8fa045ba5f244d3418b1a1a}{walk\+Right}
+\begin{DoxyCompactList}\small\item\em Animation sprites for player walking right. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ae184fcb45669b5da9ce115fcf4446099}\label{classactor_1_1player_1_1_player_ae184fcb45669b5da9ce115fcf4446099}} 
+\hyperlink{classactor_1_1player_1_1_player_ae184fcb45669b5da9ce115fcf4446099}{walk\+Up}
+\begin{DoxyCompactList}\small\item\em Animation sprites for player walking up. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a4671e233ca20a575cd6cf6019a56bb12}\label{classactor_1_1player_1_1_player_a4671e233ca20a575cd6cf6019a56bb12}} 
+\hyperlink{classactor_1_1player_1_1_player_a4671e233ca20a575cd6cf6019a56bb12}{walk\+Down}
+\begin{DoxyCompactList}\small\item\em Animation sprites for player walking down. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a544178e6ebb1b49a348753c870df24f1}\label{classactor_1_1player_1_1_player_a544178e6ebb1b49a348753c870df24f1}} 
+\hyperlink{classactor_1_1player_1_1_player_a544178e6ebb1b49a348753c870df24f1}{attacksprite}
+\begin{DoxyCompactList}\small\item\em Animation sprites for player attacking. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a4f3f92ac7e33ec63e49914610d1cd5ed}\label{classactor_1_1player_1_1_player_a4f3f92ac7e33ec63e49914610d1cd5ed}} 
+\hyperlink{classactor_1_1player_1_1_player_a4f3f92ac7e33ec63e49914610d1cd5ed}{obj}
+\begin{DoxyCompactList}\small\item\em List of objects that the player can collide with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a8678a9b7bbec1f8a257498fdd66597fb}\label{classactor_1_1player_1_1_player_a8678a9b7bbec1f8a257498fdd66597fb}} 
+\hyperlink{classactor_1_1player_1_1_player_a8678a9b7bbec1f8a257498fdd66597fb}{hbar}
+\begin{DoxyCompactList}\small\item\em Health bar corresponding to the player\textquotesingle{}s health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a31f4d4cef26800b302bb683ab0008851}\label{classactor_1_1player_1_1_player_a31f4d4cef26800b302bb683ab0008851}} 
+\hyperlink{classactor_1_1player_1_1_player_a31f4d4cef26800b302bb683ab0008851}{rbar}
+\begin{DoxyCompactList}\small\item\em Rupee bar corresponding to the player\textquotesingle{}s rupy count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_afa08d9f1172947ccc9eb5e5bae3a7a8e}\label{classactor_1_1player_1_1_player_afa08d9f1172947ccc9eb5e5bae3a7a8e}} 
+\hyperlink{classactor_1_1player_1_1_player_afa08d9f1172947ccc9eb5e5bae3a7a8e}{kbar}
+\begin{DoxyCompactList}\small\item\em Key bar corresponding to the player\textquotesingle{}s key count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_af93fcffe1d5f4b16ad7ca71b54a779d7}\label{classactor_1_1player_1_1_player_af93fcffe1d5f4b16ad7ca71b54a779d7}} 
+\hyperlink{classactor_1_1player_1_1_player_af93fcffe1d5f4b16ad7ca71b54a779d7}{totalhp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s maximum HP amount. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ae153752032a484c8f84d11a3bd4ad922}\label{classactor_1_1player_1_1_player_ae153752032a484c8f84d11a3bd4ad922}} 
+\hyperlink{classactor_1_1player_1_1_player_ae153752032a484c8f84d11a3bd4ad922}{hp}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s current HP amount (starts at max) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_aafe402d4ccb42214e7afa642a97a91ee}\label{classactor_1_1player_1_1_player_aafe402d4ccb42214e7afa642a97a91ee}} 
+\hyperlink{classactor_1_1player_1_1_player_aafe402d4ccb42214e7afa642a97a91ee}{rupes}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s rupee counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a2be3c96f039bbc8e535f2bc2a9379b75}\label{classactor_1_1player_1_1_player_a2be3c96f039bbc8e535f2bc2a9379b75}} 
+\hyperlink{classactor_1_1player_1_1_player_a2be3c96f039bbc8e535f2bc2a9379b75}{keys}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s key counter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a2d44111bc500754466a7cc60f560a3b1}\label{classactor_1_1player_1_1_player_a2d44111bc500754466a7cc60f560a3b1}} 
+\hyperlink{classactor_1_1player_1_1_player_a2d44111bc500754466a7cc60f560a3b1}{collision}
+\begin{DoxyCompactList}\small\item\em Whether the player is currently colliding with anything. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ae7fd956a4af73cb7079ebac7fd02c500}\label{classactor_1_1player_1_1_player_ae7fd956a4af73cb7079ebac7fd02c500}} 
+\hyperlink{classactor_1_1player_1_1_player_ae7fd956a4af73cb7079ebac7fd02c500}{collidbuy}
+\begin{DoxyCompactList}\small\item\em Whether the player has collided with the shop object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ad9f2b3abde9b91875f4840fed4f64da2}\label{classactor_1_1player_1_1_player_ad9f2b3abde9b91875f4840fed4f64da2}} 
+\hyperlink{classactor_1_1player_1_1_player_ad9f2b3abde9b91875f4840fed4f64da2}{doorcount}
+\begin{DoxyCompactList}\small\item\em How long the player needs to walk into a locked door to use a key and unlock it (Prevents touching and unlocking doors by accident) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ab086494231fe0db5a191209fb496aa32}\label{classactor_1_1player_1_1_player_ab086494231fe0db5a191209fb496aa32}} 
+\hyperlink{classactor_1_1player_1_1_player_ab086494231fe0db5a191209fb496aa32}{spawning}
+\begin{DoxyCompactList}\small\item\em Checks whether the player has just entered a room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_acf96b0094e3294d7c0d0dcc23a2450e2}\label{classactor_1_1player_1_1_player_acf96b0094e3294d7c0d0dcc23a2450e2}} 
+\hyperlink{classactor_1_1player_1_1_player_acf96b0094e3294d7c0d0dcc23a2450e2}{spawncount}
+\begin{DoxyCompactList}\small\item\em Number of frames before the user can take control of the player when they enter a room. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a62a06e2de507cf924ceb42c478e0acb9}\label{classactor_1_1player_1_1_player_a62a06e2de507cf924ceb42c478e0acb9}} 
+\hyperlink{classactor_1_1player_1_1_player_a62a06e2de507cf924ceb42c478e0acb9}{moveable}
+\begin{DoxyCompactList}\small\item\em Boolean allowing and stoping the player from moving. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a77d57d979bab2c2918501b536130cd4f}\label{classactor_1_1player_1_1_player_a77d57d979bab2c2918501b536130cd4f}} 
+\hyperlink{classactor_1_1player_1_1_player_a77d57d979bab2c2918501b536130cd4f}{attackbool}
+\begin{DoxyCompactList}\small\item\em Boolean to tell whether the player is attacking or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a9014fc320d75f42a42067131ef359521}\label{classactor_1_1player_1_1_player_a9014fc320d75f42a42067131ef359521}} 
+\hyperlink{classactor_1_1player_1_1_player_a9014fc320d75f42a42067131ef359521}{attackcount}
+\begin{DoxyCompactList}\small\item\em Attack counter, to control how long the attack lasts. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1player_1_1_player_a479ddb8958705d9cbd7830e9ba59f8c5}{attacksword}
+\begin{DoxyCompactList}\small\item\em Holder for a sword object when attacking. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a6c97e5519cba645d52374ef46537b913}\label{classactor_1_1player_1_1_player_a6c97e5519cba645d52374ef46537b913}} 
+\hyperlink{classactor_1_1player_1_1_player_a6c97e5519cba645d52374ef46537b913}{item}
+\begin{DoxyCompactList}\small\item\em Holder for a boomerang object when using item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ad03534ba44251c9d8d6b72d2b1cc027e}\label{classactor_1_1player_1_1_player_ad03534ba44251c9d8d6b72d2b1cc027e}} 
+\hyperlink{classactor_1_1player_1_1_player_ad03534ba44251c9d8d6b72d2b1cc027e}{itembool}
+\begin{DoxyCompactList}\small\item\em Boolean to tell whether the player is using their boomerang or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a1dd72a6eb3f660ee7ae95848e534b5b4}\label{classactor_1_1player_1_1_player_a1dd72a6eb3f660ee7ae95848e534b5b4}} 
+\hyperlink{classactor_1_1player_1_1_player_a1dd72a6eb3f660ee7ae95848e534b5b4}{oldx}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s x value one frame ago. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a732ab21f88b48cad06541e86e4f5166c}\label{classactor_1_1player_1_1_player_a732ab21f88b48cad06541e86e4f5166c}} 
+\hyperlink{classactor_1_1player_1_1_player_a732ab21f88b48cad06541e86e4f5166c}{oldy}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1player_1_1_player}{Player}\textquotesingle{}s y value one frame ago. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_aae66aa3ba8ee37f20c3f24278c203f5b}\label{classactor_1_1player_1_1_player_aae66aa3ba8ee37f20c3f24278c203f5b}} 
+\hyperlink{classactor_1_1player_1_1_player_aae66aa3ba8ee37f20c3f24278c203f5b}{dirbool}
+\begin{DoxyCompactList}\small\item\em Boolean array to tell which directional buttons are pressed or not (starting left going clockwise, dirbool\mbox{[}0\mbox{]} is left, dirbool\mbox{[}1\mbox{]} is up, etc) \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1player_1_1_player_a569ec214c309ddbf82e414c310861832}{dir}
+\begin{DoxyCompactList}\small\item\em Current direction the player is facing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a80a7403771d9fb980354b43241eb21d2}\label{classactor_1_1player_1_1_player_a80a7403771d9fb980354b43241eb21d2}} 
+\hyperlink{classactor_1_1player_1_1_player_a80a7403771d9fb980354b43241eb21d2}{hit}
+\begin{DoxyCompactList}\small\item\em Boolean on whether the player was recently hit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a0c6434fb932d898b1ec1ed77c97d46b5}\label{classactor_1_1player_1_1_player_a0c6434fb932d898b1ec1ed77c97d46b5}} 
+\hyperlink{classactor_1_1player_1_1_player_a0c6434fb932d898b1ec1ed77c97d46b5}{hitcount}
+\begin{DoxyCompactList}\small\item\em How long a hit counts for on the player (how long until self.\+hit turns off) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a303bd9cebacff3d0c25b359e18d7bb3a}\label{classactor_1_1player_1_1_player_a303bd9cebacff3d0c25b359e18d7bb3a}} 
+\hyperlink{classactor_1_1player_1_1_player_a303bd9cebacff3d0c25b359e18d7bb3a}{speed}
+\begin{DoxyCompactList}\small\item\em Per-\/frame unit speed of player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a5cf8c2343817f5fdf357579fc078b677}\label{classactor_1_1player_1_1_player_a5cf8c2343817f5fdf357579fc078b677}} 
+\hyperlink{classactor_1_1player_1_1_player_a5cf8c2343817f5fdf357579fc078b677}{debug}
+\begin{DoxyCompactList}\small\item\em Whether debug mode is on/off. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_aa3b90c5623839511cd22f4e0ee1745ea}\label{classactor_1_1player_1_1_player_aa3b90c5623839511cd22f4e0ee1745ea}} 
+\hyperlink{classactor_1_1player_1_1_player_aa3b90c5623839511cd22f4e0ee1745ea}{has\+Won}
+\begin{DoxyCompactList}\small\item\em Has the player won or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classactor_1_1player_1_1_player}{Player} Class  A pygame sprite subclass for defining the creation of the game\textquotesingle{}s playable character, as well as its interactions with both the user and other entities within the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ab706da8ac6c2ddecb694069c9c55485b}\label{classactor_1_1player_1_1_player_ab706da8ac6c2ddecb694069c9c55485b}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+player.\+Player.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{hud }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classactor_1_1player_1_1_player}{Player} constructor  The constructor for the player object, used within the initialization of the game. 
+
+The only arguments passed are an initial x and y position, as well as heads-\/up-\/display (H\+UD) elements. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Initial player x coordinate \\
+\hline
+{\em y} & Initial player y coordinate \\
+\hline
+{\em hud} & Array of H\+UD elements which act directly with the user\textquotesingle{}s tracked values (health bar, rupy/key count) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_ab05b71626b99e6cb0babce2d9f7bbb49}\label{classactor_1_1player_1_1_player_ab05b71626b99e6cb0babce2d9f7bbb49}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!attackupdate@{attackupdate}}
+\index{attackupdate@{attackupdate}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{attackupdate()}{attackupdate()}}
+{\footnotesize\ttfamily def actor.\+player.\+Player.\+attackupdate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Update function for attack and boomerang conditions, as well as handing user collision with enemies (damage taken)  Checks sword collision on enemies, and checks the timeout on both the sword and boomerang attack animations, telling the player when they can move again. 
+
+Also updates the player and reacts accordingly to recieving damage. \mbox{\Hypertarget{classactor_1_1player_1_1_player_a8ac11a22aa47b7febd29d1c740f00452}\label{classactor_1_1player_1_1_player_a8ac11a22aa47b7febd29d1c740f00452}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!move@{move}}
+\index{move@{move}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def actor.\+player.\+Player.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{d,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+
+
+Function to store which movement buttons are being pressed and let go of by the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Direction related to the button pressed (integer value from 0 to 3, starting from the left and going clockwise) \\
+\hline
+{\em b} & Boolean value on whether the button is pressed or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a709570fc745642d3ad2764e4d973491b}\label{classactor_1_1player_1_1_player_a709570fc745642d3ad2764e4d973491b}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!moveupdate@{moveupdate}}
+\index{moveupdate@{moveupdate}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{moveupdate()}{moveupdate()}}
+{\footnotesize\ttfamily def actor.\+player.\+Player.\+moveupdate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+U\+P\+D\+A\+TE L\+O\+OP F\+U\+N\+C\+T\+I\+O\+NS. 
+
+Update function for player movement and according sprite animation 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactor_1_1player_1_1_player_a479ddb8958705d9cbd7830e9ba59f8c5}\label{classactor_1_1player_1_1_player_a479ddb8958705d9cbd7830e9ba59f8c5}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!attacksword@{attacksword}}
+\index{attacksword@{attacksword}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{attacksword}{attacksword}}
+{\footnotesize\ttfamily actor.\+player.\+Player.\+attacksword}
+
+
+
+Holder for a sword object when attacking. 
+
+Sprite function to delete a sprite object and all relations of the object in the project. \mbox{\Hypertarget{classactor_1_1player_1_1_player_a569ec214c309ddbf82e414c310861832}\label{classactor_1_1player_1_1_player_a569ec214c309ddbf82e414c310861832}} 
+\index{actor\+::player\+::\+Player@{actor\+::player\+::\+Player}!dir@{dir}}
+\index{dir@{dir}!actor\+::player\+::\+Player@{actor\+::player\+::\+Player}}
+\subsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily actor.\+player.\+Player.\+dir}
+
+
+
+Current direction the player is facing. 
+
+Render Appropriate Sprites According to movement. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{player_8py}{player.\+py}\end{DoxyCompactItemize}

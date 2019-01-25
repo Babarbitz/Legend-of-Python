@@ -1,0 +1,116 @@
+\hypertarget{classcollision_1_1wall_1_1_wall}{}\section{collision.\+wall.\+Wall Class Reference}
+\label{classcollision_1_1wall_1_1_wall}\index{collision.\+wall.\+Wall@{collision.\+wall.\+Wall}}
+
+
+This class represents the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class for collision for objects in the environment.  
+
+
+Inheritance diagram for collision.\+wall.\+Wall\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcollision_1_1wall_1_1_wall}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcollision_1_1wall_1_1_wall_a9e55a33a1a456adb22a7dadc4f26be4c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y, w, h, sprite)
+\begin{DoxyCompactList}\small\item\em Constructor for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class. \end{DoxyCompactList}\item 
+def \hyperlink{classcollision_1_1wall_1_1_wall_a9514acfca4d222ec8d838d7bb29aeb1e}{collision} (self, i)
+\begin{DoxyCompactList}\small\item\em This method checks for collision with the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object and other sprite object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcollision_1_1wall_1_1_wall_ac5d61504c644c284d3fb0b67e9bcc1c3}{image}
+\begin{DoxyCompactList}\small\item\em This represents the sprite image for \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object. \end{DoxyCompactList}\item 
+\hyperlink{classcollision_1_1wall_1_1_wall_a7bdfce57724f53f3b0879e12f2f3b78e}{rect}
+\begin{DoxyCompactList}\small\item\em This represents rectangle for position for the sprite image of the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object. \end{DoxyCompactList}\item 
+\hyperlink{classcollision_1_1wall_1_1_wall_aacfb0da0a2fa307f54a571348a0df427}{id}
+\begin{DoxyCompactList}\small\item\em This represents the ID for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object, ised for collision in {\bfseries main.\+py}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class for collision for objects in the environment. 
+
+The \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class uses the base class for visible game objects from Pygame library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcollision_1_1wall_1_1_wall_a9e55a33a1a456adb22a7dadc4f26be4c}\label{classcollision_1_1wall_1_1_wall_a9e55a33a1a456adb22a7dadc4f26be4c}} 
+\index{collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def collision.\+wall.\+Wall.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{w,  }\item[{}]{h,  }\item[{}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class. 
+
+Constructor for \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} class initializes a \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object based on the x/y location and the width/height of the wall, and the sprite the collision for the wall will be created upon. 
+\begin{DoxyParams}{Parameters}
+{\em x} & This represents the integer value for the x-\/location for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object to be created. \\
+\hline
+{\em y} & This represents the integer value for the y-\/location for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object to be created. \\
+\hline
+{\em w} & This represents the integer value for the width of the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object when created. \\
+\hline
+{\em h} & This represents the integer value for the height of the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object when created. \\
+\hline
+{\em sprite} & This represents the sprite that the collison for a \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} will be present upon at all times. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcollision_1_1wall_1_1_wall_a9514acfca4d222ec8d838d7bb29aeb1e}\label{classcollision_1_1wall_1_1_wall_a9514acfca4d222ec8d838d7bb29aeb1e}} 
+\index{collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}!collision@{collision}}
+\index{collision@{collision}!collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily def collision.\+wall.\+Wall.\+collision (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i }\end{DoxyParamCaption})}
+
+
+
+This method checks for collision with the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object and other sprite object. 
+
+The collision will be checked with the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} and other sprite object as the object collides with the wall. 
+\begin{DoxyParams}{Parameters}
+{\em i} & This is the sprite object that is passed into the method, and checks if the object is colliding with the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object, reseting the sprite objects location accordingly. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcollision_1_1wall_1_1_wall_aacfb0da0a2fa307f54a571348a0df427}\label{classcollision_1_1wall_1_1_wall_aacfb0da0a2fa307f54a571348a0df427}} 
+\index{collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}!id@{id}}
+\index{id@{id}!collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily collision.\+wall.\+Wall.\+id}
+
+
+
+This represents the ID for the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object, ised for collision in {\bfseries main.\+py}. 
+
+\mbox{\Hypertarget{classcollision_1_1wall_1_1_wall_ac5d61504c644c284d3fb0b67e9bcc1c3}\label{classcollision_1_1wall_1_1_wall_ac5d61504c644c284d3fb0b67e9bcc1c3}} 
+\index{collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}!image@{image}}
+\index{image@{image}!collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily collision.\+wall.\+Wall.\+image}
+
+
+
+This represents the sprite image for \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object. 
+
+\mbox{\Hypertarget{classcollision_1_1wall_1_1_wall_a7bdfce57724f53f3b0879e12f2f3b78e}\label{classcollision_1_1wall_1_1_wall_a7bdfce57724f53f3b0879e12f2f3b78e}} 
+\index{collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}!rect@{rect}}
+\index{rect@{rect}!collision\+::wall\+::\+Wall@{collision\+::wall\+::\+Wall}}
+\subsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily collision.\+wall.\+Wall.\+rect}
+
+
+
+This represents rectangle for position for the sprite image of the \hyperlink{classcollision_1_1wall_1_1_wall}{Wall} object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/collision/\hyperlink{wall_8py}{wall.\+py}\end{DoxyCompactItemize}

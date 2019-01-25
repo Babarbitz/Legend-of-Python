@@ -1,0 +1,86 @@
+\hypertarget{classactor_1_1item_1_1_item}{}\section{actor.\+item.\+Item Class Reference}
+\label{classactor_1_1item_1_1_item}\index{actor.\+item.\+Item@{actor.\+item.\+Item}}
+
+
+Consumable \hyperlink{classactor_1_1item_1_1_item}{Item} Class  This class is used for the creation of a random consumable item, spawned once an enemy has been defeated on their last position before despawn.  
+
+
+Inheritance diagram for actor.\+item.\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classactor_1_1item_1_1_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1item_1_1_item_a13d4ef784805457c46d4c6872aa0903d}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y, typ)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1item_1_1_item}{Item} constructor  A sprite subclass constructor which takes a pair of x-\/y coordinates, commonly those of the killed enemy, and an item type, in the form of a randomly generated integer from 0 to the \# of possible items. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1item_1_1_item_a3ad3940f06483ccce49fe2673896555f}{collision} (self, p)
+\begin{DoxyCompactList}\small\item\em Collision handler for the player and the consumable item, depending on the item\textquotesingle{}s type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_a2f2f0de31fa9a294bdf2c6070c43cf8a}\label{classactor_1_1item_1_1_item_a2f2f0de31fa9a294bdf2c6070c43cf8a}} 
+\hyperlink{classactor_1_1item_1_1_item_a2f2f0de31fa9a294bdf2c6070c43cf8a}{image}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1item_1_1_item}{Item} sprite image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_a0341980445d257f74dfc20208a93afd8}\label{classactor_1_1item_1_1_item_a0341980445d257f74dfc20208a93afd8}} 
+\hyperlink{classactor_1_1item_1_1_item_a0341980445d257f74dfc20208a93afd8}{itemsprite}
+\begin{DoxyCompactList}\small\item\em List of possible item sprite images. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_aebbc33971d663fba6f5bd54e03a63813}\label{classactor_1_1item_1_1_item_aebbc33971d663fba6f5bd54e03a63813}} 
+\hyperlink{classactor_1_1item_1_1_item_aebbc33971d663fba6f5bd54e03a63813}{rect}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1item_1_1_item}{Item} x and y position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_aee8f12aa657322ef895d9151dcc54e71}\label{classactor_1_1item_1_1_item_aee8f12aa657322ef895d9151dcc54e71}} 
+\hyperlink{classactor_1_1item_1_1_item_aee8f12aa657322ef895d9151dcc54e71}{id}
+\begin{DoxyCompactList}\small\item\em Collision ID (how other items tell what this item is) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_ae65791520a3bdb6905e6e14a8b0abb3c}\label{classactor_1_1item_1_1_item_ae65791520a3bdb6905e6e14a8b0abb3c}} 
+\hyperlink{classactor_1_1item_1_1_item_ae65791520a3bdb6905e6e14a8b0abb3c}{type}
+\begin{DoxyCompactList}\small\item\em Integer value to determine what kind of item this is (rupee, heart, etc) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Consumable \hyperlink{classactor_1_1item_1_1_item}{Item} Class  This class is used for the creation of a random consumable item, spawned once an enemy has been defeated on their last position before despawn. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_a13d4ef784805457c46d4c6872aa0903d}\label{classactor_1_1item_1_1_item_a13d4ef784805457c46d4c6872aa0903d}} 
+\index{actor\+::item\+::\+Item@{actor\+::item\+::\+Item}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::item\+::\+Item@{actor\+::item\+::\+Item}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+item.\+Item.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{typ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classactor_1_1item_1_1_item}{Item} constructor  A sprite subclass constructor which takes a pair of x-\/y coordinates, commonly those of the killed enemy, and an item type, in the form of a randomly generated integer from 0 to the \# of possible items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the spawned item \\
+\hline
+{\em y} & Y coordinate of the spawned item \\
+\hline
+{\em typ} & Integer value to specify the type of consumable item \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1item_1_1_item_a3ad3940f06483ccce49fe2673896555f}\label{classactor_1_1item_1_1_item_a3ad3940f06483ccce49fe2673896555f}} 
+\index{actor\+::item\+::\+Item@{actor\+::item\+::\+Item}!collision@{collision}}
+\index{collision@{collision}!actor\+::item\+::\+Item@{actor\+::item\+::\+Item}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily def actor.\+item.\+Item.\+collision (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Collision handler for the player and the consumable item, depending on the item\textquotesingle{}s type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Player object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{item_8py}{item.\+py}\end{DoxyCompactItemize}

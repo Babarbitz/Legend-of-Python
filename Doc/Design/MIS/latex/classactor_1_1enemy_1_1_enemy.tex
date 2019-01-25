@@ -1,0 +1,168 @@
+\hypertarget{classactor_1_1enemy_1_1_enemy}{}\section{actor.\+enemy.\+Enemy Class Reference}
+\label{classactor_1_1enemy_1_1_enemy}\index{actor.\+enemy.\+Enemy@{actor.\+enemy.\+Enemy}}
+
+
+Superclass for representing an \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}.  
+
+
+Inheritance diagram for actor.\+enemy.\+Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classactor_1_1enemy_1_1_enemy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_a6924d71617a5022d67fd46b36141dfd2}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, x, y)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_afa749d4d6a88fac474c3929ccd3b0753}\label{classactor_1_1enemy_1_1_enemy_afa749d4d6a88fac474c3929ccd3b0753}} 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_afa749d4d6a88fac474c3929ccd3b0753}{check\+State} (self)
+\begin{DoxyCompactList}\small\item\em Empty function for evaluating \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} state. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_acae64f8e1e7e13ee7c440c74e3c214c8}{move} (self)
+\begin{DoxyCompactList}\small\item\em Moves the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a94d38c945f048b873e33a539fb7cf502}\label{classactor_1_1enemy_1_1_enemy_a94d38c945f048b873e33a539fb7cf502}} 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_a94d38c945f048b873e33a539fb7cf502}{enemy\+Logic} (self)
+\begin{DoxyCompactList}\small\item\em Empty function for logic of \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_a5a7ad5761870721d959d491b33eb4908}{update} (self)
+\begin{DoxyCompactList}\small\item\em Update loop for a \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. \end{DoxyCompactList}\item 
+def \hyperlink{classactor_1_1enemy_1_1_enemy_a26b704148d13a372e1bf150937e30673}{hit} (self, direc)
+\begin{DoxyCompactList}\small\item\em Hit dectetion for \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_aa1cb2b099f1405c72c5aead1f72ca273}\label{classactor_1_1enemy_1_1_enemy_aa1cb2b099f1405c72c5aead1f72ca273}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_aa1cb2b099f1405c72c5aead1f72ca273}{image}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} Pygame surface. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_aea251391a575a128f97cfd1806311f1e}\label{classactor_1_1enemy_1_1_enemy_aea251391a575a128f97cfd1806311f1e}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_aea251391a575a128f97cfd1806311f1e}{rect}
+\begin{DoxyCompactList}\small\item\em Rectanlge that represents enemy. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a0e6ba00fdf6dd7aba8b872f7b21040a7}{id}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} x postion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_ac706787533eed329ba4d3f69018dfd4f}\label{classactor_1_1enemy_1_1_enemy_ac706787533eed329ba4d3f69018dfd4f}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_ac706787533eed329ba4d3f69018dfd4f}{is\+Hit}
+\begin{DoxyCompactList}\small\item\em Wether the enemy is hit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a682e04fb5525441486f5ecfdd1a2d879}\label{classactor_1_1enemy_1_1_enemy_a682e04fb5525441486f5ecfdd1a2d879}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a682e04fb5525441486f5ecfdd1a2d879}{stuncount}
+\begin{DoxyCompactList}\small\item\em Remaining stun frames. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_ad57e864feaa058d6e05344a5131e3c3b}\label{classactor_1_1enemy_1_1_enemy_ad57e864feaa058d6e05344a5131e3c3b}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_ad57e864feaa058d6e05344a5131e3c3b}{max\+HP}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} max health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a628179612c6af830270a9fd49e147bce}\label{classactor_1_1enemy_1_1_enemy_a628179612c6af830270a9fd49e147bce}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a628179612c6af830270a9fd49e147bce}{HP}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} current health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a23382d6dec9cbf34c1feec91de95db36}\label{classactor_1_1enemy_1_1_enemy_a23382d6dec9cbf34c1feec91de95db36}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a23382d6dec9cbf34c1feec91de95db36}{dmg}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} damage. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1enemy_1_1_enemy_aaa23681089031060de8abdf44956b7d1}{hit\+Count}
+\begin{DoxyCompactList}\small\item\em This represents the buffer for the number of hits for the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} after being hit by player character. \end{DoxyCompactList}\item 
+\hyperlink{classactor_1_1enemy_1_1_enemy_acc0b053f7922d48e2b76b2a0341c2c0c}{hitdir}
+\begin{DoxyCompactList}\small\item\em Represents the direction \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} is hit in by player character attack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_aeb8e66f955c0233222186a0b31ffebec}\label{classactor_1_1enemy_1_1_enemy_aeb8e66f955c0233222186a0b31ffebec}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_aeb8e66f955c0233222186a0b31ffebec}{x\+Speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} speed in the x direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a9df94b7c1824222274977377fc61de0b}\label{classactor_1_1enemy_1_1_enemy_a9df94b7c1824222274977377fc61de0b}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a9df94b7c1824222274977377fc61de0b}{y\+Speed}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} speed in the y direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a2c89ef588742abcdeb22215bb381d69b}\label{classactor_1_1enemy_1_1_enemy_a2c89ef588742abcdeb22215bb381d69b}} 
+\hyperlink{classactor_1_1enemy_1_1_enemy_a2c89ef588742abcdeb22215bb381d69b}{frame\+Counter}
+\begin{DoxyCompactList}\small\item\em Total number of frames the enemy has been alive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Superclass for representing an \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a6924d71617a5022d67fd46b36141dfd2}\label{classactor_1_1enemy_1_1_enemy_a6924d71617a5022d67fd46b36141dfd2}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def actor.\+enemy.\+Enemy.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor for \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. 
+
+Constructor takes two parameters, the x and y coordinates 
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the starting postion of the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} \\
+\hline
+{\em y} & Y coordinate of the starting postion of the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a26b704148d13a372e1bf150937e30673}\label{classactor_1_1enemy_1_1_enemy_a26b704148d13a372e1bf150937e30673}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!hit@{hit}}
+\index{hit@{hit}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily def actor.\+enemy.\+Enemy.\+hit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{direc }\end{DoxyParamCaption})}
+
+
+
+Hit dectetion for \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. 
+
+Handles health, iframes and knockback direction 
+\begin{DoxyParams}{Parameters}
+{\em direc} & Direction of the knockback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_acae64f8e1e7e13ee7c440c74e3c214c8}\label{classactor_1_1enemy_1_1_enemy_acae64f8e1e7e13ee7c440c74e3c214c8}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!move@{move}}
+\index{move@{move}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily def actor.\+enemy.\+Enemy.\+move (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Moves the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. 
+
+Adds the x speed and y speed to the x and y postion of the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} \mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a5a7ad5761870721d959d491b33eb4908}\label{classactor_1_1enemy_1_1_enemy_a5a7ad5761870721d959d491b33eb4908}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!update@{update}}
+\index{update@{update}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def actor.\+enemy.\+Enemy.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Update loop for a \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy}. 
+
+Checks state, does the logic, and then moves \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_aaa23681089031060de8abdf44956b7d1}\label{classactor_1_1enemy_1_1_enemy_aaa23681089031060de8abdf44956b7d1}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!hit\+Count@{hit\+Count}}
+\index{hit\+Count@{hit\+Count}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{hit\+Count}{hitCount}}
+{\footnotesize\ttfamily actor.\+enemy.\+Enemy.\+hit\+Count}
+
+
+
+This represents the buffer for the number of hits for the \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} after being hit by player character. 
+
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_acc0b053f7922d48e2b76b2a0341c2c0c}\label{classactor_1_1enemy_1_1_enemy_acc0b053f7922d48e2b76b2a0341c2c0c}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!hitdir@{hitdir}}
+\index{hitdir@{hitdir}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{hitdir}{hitdir}}
+{\footnotesize\ttfamily actor.\+enemy.\+Enemy.\+hitdir}
+
+
+
+Represents the direction \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} is hit in by player character attack. 
+
+\mbox{\Hypertarget{classactor_1_1enemy_1_1_enemy_a0e6ba00fdf6dd7aba8b872f7b21040a7}\label{classactor_1_1enemy_1_1_enemy_a0e6ba00fdf6dd7aba8b872f7b21040a7}} 
+\index{actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}!id@{id}}
+\index{id@{id}!actor\+::enemy\+::\+Enemy@{actor\+::enemy\+::\+Enemy}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily actor.\+enemy.\+Enemy.\+id}
+
+
+
+\hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} x postion. 
+
+\hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} y postion \hyperlink{classactor_1_1enemy_1_1_enemy}{Enemy} Id type 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/actor/\hyperlink{enemy_8py}{enemy.\+py}\end{DoxyCompactItemize}
