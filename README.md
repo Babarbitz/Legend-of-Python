@@ -12,6 +12,13 @@ The folders and files for this project are as follows:
 Doc - Documentation for the project
 Code - Implementation
 
+## How to Play
+
+To play the game, clone the repo and run
+```bash
+make run
+```
+
 ## Controls
 
 Movement: WASD
